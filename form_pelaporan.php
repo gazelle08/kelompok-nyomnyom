@@ -1,6 +1,8 @@
-<?php require('config.php');
+<!-- Autentikasi -->
+<?php require('../config.php');
     if(is_logged_in()){
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -177,7 +179,7 @@
 <body>
 	<?php $this_page='pelaporan'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php require("/page_template.php"); ?>
+	<?php require("../page_template.php"); ?>
 
 		<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content"> <!-- Intinya style dari id="page-content" tapi tanpa padding -->
@@ -255,7 +257,7 @@
 				<!-- Pop-up sudah terkonfirmasi -->
 				<div id="kirim-lapor" class="konfirmasi">
 					<div class="konfirmasi-lapor" id="berhasil">
-						<img src=confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
+						<img src=../confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
 						<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Laporan anda sudah terkirim!</p>
 						<button class="button-ok" onclick="location.href='pelaporan.php'">OK</button>
 					</div>
