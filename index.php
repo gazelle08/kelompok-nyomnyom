@@ -56,7 +56,7 @@
 
 		#styleme {
 			color: white;
-			font-size: 80px;
+			font-size: 75px;
 			font-weight: bold;
 			position: relative;
 			top: 0;
