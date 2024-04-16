@@ -8,7 +8,7 @@
             border-collapse: collapse;
         }
         table, th, td {
-            border: 1px solid black;
+            border: 1px pink;
             padding: 8px;
             text-align: left;
         }
@@ -33,7 +33,7 @@
     <tbody>
         <?php
         // Koneksi ke database
-        $koneksi = mysqli_connect("localhost", "username", "password", "nama_database");
+        $koneksi = mysqli_connect("localhost", "username", "password", "styleme");
 
         // Periksa koneksi
         if (mysqli_connect_errno()) {
@@ -42,7 +42,7 @@
         }
 
         // Query untuk mengambil data laporan
-        $query = "SELECT id_laporan, id_pesanan, status_laporan, keterangan FROM laporan_toko_online";
+        $query = "SELECT id_laporan, id_pesanan, status_laporan, keterangan FROM laporan_pelanggan";
         $result = mysqli_query($koneksi, $query);
 
         // Tampilkan data dalam tabel
