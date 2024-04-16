@@ -272,8 +272,8 @@
 
 					<!-- No.Handphone -->
 					<div style="position: absolute; top: 81px; padding-left: 41px;">
-						<label>No. Handphone</label>
-						<input type="text" name='no_handphone' required>
+						<label>Email</label>
+						<input type="text" name='email' required>
 					</div>
 					
 					<div class="col12" style="position: relative; top: 131px; vertical-align: middle;">
