@@ -56,7 +56,7 @@
 
 		#styleme {
 			color: white;
-			font-size: 80px;
+			font-size: 75px;
 			font-weight: bold;
 			position: relative;
 			top: 0;
@@ -186,8 +186,8 @@
 
 		#button-daftar:hover {
 			background-color: white;
-			color: #F98CB9;
-			border: 3px solid #F98CB9;
+			color: #FBB4C6;
+			border: 3px solid #FBB4C6;
 		}
 
 		#lupa-password {
@@ -266,13 +266,12 @@
 	</style>
 </head>
 <body>
-	<div style="width: 100%; height: 100%; position: absolute;">
-		<div class="col12">
-			<!-- Styleme & Gambar -->
-			<div class="col5" style="position: relative; top: 100px; text-align: right;">
-				<p id="styleme">StyleMe</p>
-				<img src="login-pic.svg" style="position: relative; top: 51px;">
-			</div>
+  <div style="width: 100%; height: 100%; position: absolute;">
+    <div class="col12">
+      <div class="col5" style="position: relative; top: 50px; text-align: right;">
+        <p id="styleme">StyleMe</p>
+        <img src="styleme.png" style="width: 62%; height: auto; position: relative; top: -20px;">
+      </div>
 
 			<!-- Tempat Login -->
 			<div class="col7" id="loginform">
@@ -315,7 +314,7 @@
 		<!-- StyleMe 2022 -->
 		<div class="col12" style="position: absolute; bottom: 0;">
 			<hr class="StyleMe">
-			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; StyleMe 2022. Hak Cipta Dilindungi</p>
+			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; StyleMe 2024. Hak Cipta Dilindungi</p>
 		</div>
 
 		<!-- Pop-up -->
