@@ -7,7 +7,7 @@ $password = sha1($password);
 
 if(isset($username) && isset($password) && !empty($username) && !empty($password))
 {
-    $sql = mysqli_query($conn, "SELECT username, password FROM user WHERE username = '$username' AND password = '$password'");
+    $sql = mysqli_query($conn, "SELECT username, password FROM admin WHERE username = '$username' AND password = '$password'");
 
     //Check the number of users against database
     //with the given criteria.  We're looking for 1 so 
@@ -18,7 +18,7 @@ if(isset($username) && isset($password) && !empty($username) && !empty($password
 
         //Lets grab and create a variable from the DB to register
         //the user's session with.
-        $gid = mysqli_query($conn, "SELECT username, password FROM user WHERE username = '$username' AND password = '$password'");
+        $gid = mysqli_query($conn, "SELECT username, password FROM admin WHERE username = '$username' AND password = '$password'");
         $row = mysqli_fetch_assoc($gid);
         $uid = $row['username'];
         
