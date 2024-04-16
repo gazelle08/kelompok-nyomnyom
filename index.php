@@ -6,7 +6,7 @@
 	<style type="text/css">
 		body {
 			font-family: Montserrat;
-			background-color: pink;
+			background-color: #DE0D4F;
 			margin: 0;
 			overflow-x: hidden;
 		}
@@ -78,7 +78,7 @@
 
 		h1 {
 			text-align: left;
-			color: pink;
+			color: black;
 			font-size: 39.06px;
 			padding: 0;
 			margin: 0;
@@ -88,7 +88,7 @@
 
 		#masuk {
 			text-align: left;
-			color: #969696;
+			color: #7F7F7F;
 			font-size: 20px;
 			padding: 0;
 			margin: 0;
@@ -109,6 +109,7 @@
 			position: relative;
 			font-family: Montserrat Semibold;
 			font-size: 16px;
+			color: #7F7F7F;
 			margin: 0;
 			top: 0;
 		}
@@ -149,8 +150,8 @@
 
 		input[type=submit]:hover {
 			background-color:white;
-			color: #E05B36;
-			border: 3px solid #E05B36;
+			color: #DE0D4F;
+			border: 3px solid #DE0D4F;
 		}
 
 		hr.belum-daftar {
@@ -178,7 +179,7 @@
 		}
 
 		#button-daftar {
-			background-color: #F98CB9;
+			background-color: #FBB4C6;
 			position: relative;
 			top: 177px;
 		}
@@ -190,7 +191,7 @@
 		}
 
 		#lupa-password {
-			font-size: 12px;
+			font-size: 14px;
 			font-family: montserrat medium;
 			color: red;
 			position: absolute;
