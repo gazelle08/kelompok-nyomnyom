@@ -7,14 +7,14 @@ $page = $_GET['page'];
 $id = $_GET['id'];
 
 // Query untuk menampilkan data pelanggan berdasarkan ID yang dikirim
-$query_foto = "SELECT * FROM data_product WHERE id='$id'";
+$query_foto = "SELECT * FROM produk WHERE id='$id'";
 $result_foto = mysqli_fetch_assoc(mysqli_query($conn,$query_foto));
 $foto = $result_foto['foto'];
 
  // Check if photo exists
 if(is_file('images/'.$foto)){
   unlink("images/".$foto); // Delete photo from images folder
-  $query = "DELETE FROM data_product WHERE id='$id' ";
+  $query = "DELETE FROM produk WHERE id='$id' ";
   $hasil_query = mysqli_query($conn, $query);
 }
 else {     

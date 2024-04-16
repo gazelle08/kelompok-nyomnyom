@@ -30,7 +30,7 @@ if($foto != "") {
     move_uploaded_file($file_tmp, 'images/'.$new_foto); //Moves the file img into designated folder
       // Run an INSERT query to add data into database. Make sure it is in order 
       //(id will not be necessary as it will be automatically produced)
-      $query = "UPDATE data_product SET produk = '$produk', stok = '$stok', harga = '$harga', deskripsi = '$deskripsi', foto = '$new_foto'";
+      $query = "UPDATE produk SET produk = '$produk', stok = '$stok', harga = '$harga', deskripsi = '$deskripsi', foto = '$new_foto'";
       $query .= "WHERE id = '$id'";
       $result = mysqli_query($conn, $query);
 
@@ -51,7 +51,7 @@ if($foto != "") {
       echo "<script>alert('gambar produk yang boleh digunakan hanya jpg, png, jpeg atau svg.');window.location='form_edit_produk.php';</script>";
   }
 } else { // If img is not added, then this will happen:
-  $query = "UPDATE data_product SET produk = '$produk', stok = '$stok', harga = '$harga', deskripsi = '$deskripsi'";
+  $query = "UPDATE produk SET produk = '$produk', stok = '$stok', harga = '$harga', deskripsi = '$deskripsi'";
   $query .= "WHERE id = '$id'";
   $result = mysqli_query($conn, $query);
 

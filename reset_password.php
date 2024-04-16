@@ -260,7 +260,7 @@ require("config.php");
 		<div class="col12">
 			<!-- Goket & Gambar -->
 			<div class="col5" style="position: relative; top: 100px; text-align: right;">
-				<p id="goket">Goket</p>
+				<p id="styleme">StyleMe</p>
 				<img src="login-pic.svg" style="position: relative; top: 51px;">
 			</div>
 
@@ -273,9 +273,9 @@ require("config.php");
 				</div>
 				<!-- Form -->
 				<form action="reset_password_check.php" method="POST">
-					<!-- Untuk mengirimkan username dan no_hp ke reset_password_check.php -->
+					<!-- Untuk mengirimkan username dan email ke reset_password_check.php -->
 					<input type="hidden" name='username' value="<?php echo $_POST['username'];?>">
-					<input type="hidden" name='no_handphone' value="<?php echo $_POST['no_hp'];?>">
+					<input type="hidden" name='email' value="<?php echo $_POST['email'];?>">
 
 					<!-- Password -->
 					<div style="position: relative; top: 0; padding-left: 41px;">
