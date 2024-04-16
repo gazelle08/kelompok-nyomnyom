@@ -225,7 +225,7 @@
 		<!-- Footer -->
 		<footer>
 			<hr style="width: 259px; border: 1px solid white; background-color: white; margin : 0 0 20px 48.5px; border-radius: 5px;">
-			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0px 0px 0 33px;">&copy; Goket 2022. Hak Cipta Dilindungi</p>
+			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0px 0px 0 33px;">&copy; StyleMe 2024. Hak Cipta Dilindungi</p>
 		</footer>
 	</div>
 
