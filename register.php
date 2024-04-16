@@ -78,7 +78,7 @@
 
 		h1 {
 			text-align: left;
-			color: #E05B36;
+			color: pink;
 			font-size: 39.06px;
 			padding: 0;
 			margin: 0;
@@ -139,7 +139,7 @@
 			cursor: pointer;
 			position: relative;
 			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
-			background-color: #E09240;
+			background-color: #DE0D4F;
 			transition: 0.3s;
 			display: inline-block;
 			vertical-align: middle;
@@ -147,12 +147,12 @@
 
 		input[type=submit]:hover {
 			background-color: white;
-			color: #E09240;
-			border: 3px solid #E09240;
+			color: #DE0D4F;
+			border: 3px solid #DE0D4F;
 		}
 
 		#link-kembali{
-			color: #E09240;
+			color: #DE0D4F;
 			font-family: montserrat semibold;
 			font-size: 20px;
 			height: 54px;
@@ -239,7 +239,7 @@
 
 		.button-kembali{
 			padding: 10px 20px;
-			background-color: #E05B36; 
+			background-color: #DE0D4F; 
 			border-radius: 30px;
 			border: none;
 			position: relative;
@@ -254,7 +254,7 @@
 			background-color: #FFFFFF;
 			color: #E05B36;
 			text-align: center;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}
@@ -315,7 +315,7 @@
 
 		<!-- Goket 2022 -->
 		<div class="col12" style="position: absolute; bottom: 0;">
-			<hr class="goket">
+			<hr class="styleme">
 			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; StyleMe 2024SSS. Hak Cipta Dilindungi</p>
 		</div>
 
