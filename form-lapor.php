@@ -8,7 +8,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Pelaporan Pelanggan</title>
+	<title>Laporan Pelanggan</title>
 	<style type="text/css">
 		#pelaporan-user{
 			color: black;
@@ -168,7 +168,7 @@
 								$total_pages = ceil($total_records / $per_page_record);     
 								// kembali ke halaman sebelumnya
 								if($page >= 2){
-									echo "<a href='pelaporan.php?page=".($page-1)."' id='page-num' style='padding: 0 20px 0 0;'>  &lt; </a>";
+									echo "<a href='form_pelaporan.php?page=".($page-1)."' id='page-num' style='padding: 0 20px 0 0;'>  &lt; </a>";
 								} else {
 									echo "<a href='' id='page-num' style='padding: 0 20px 0 0; color: black'>  &lt; </a>";
 								}
@@ -179,7 +179,7 @@
 							<?php
 								// ke halaman selanjutnya
 								if($page < $total_pages){
-									echo "<a href='pelaporan.php?page=".($page+1)."' id='page-num' style='padding: 0 0 0 20px;'>  &gt; </a>"; 
+									echo "<a href='form_pelaporan.php?page=".($page+1)."' id='page-num' style='padding: 0 0 0 20px;'>  &gt; </a>"; 
 								} else {
 									echo "<a href='' id='page-num' style='padding: 0 0 0 20px; color: black'>  &gt; </a>";
 								}

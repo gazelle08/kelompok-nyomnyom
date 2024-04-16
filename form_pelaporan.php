@@ -237,7 +237,7 @@
 						<!-- Button Lapor & Batal -->
 						<div style="position: relative; top: 68px; left: 307px;">
 							<button class="button-lapor" onclick="location.href='#lapor'">Lapor</button>
-							<a href="pelaporan.php" class="link-batal" style="margin-left: 40px;">Batal</a>
+							<a href="form_pelaporan.php" class="link-batal" style="margin-left: 40px;">Batal</a>
 						</div>
 					</div>
 				</div>
@@ -259,7 +259,7 @@
 					<div class="konfirmasi-lapor" id="berhasil">
 						<img src=../confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
 						<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Laporan anda sudah terkirim!</p>
-						<button class="button-ok" onclick="location.href='pelaporan.php'">OK</button>
+						<button class="button-ok" onclick="location.href='form_pelaporan.php'">OK</button>
 					</div>
 				</div>
 			</div>
