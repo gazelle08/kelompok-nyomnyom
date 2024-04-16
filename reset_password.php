@@ -1,13 +1,15 @@
-<?php require("config.php"); ?>
+<?php 
+require("config.php");
+?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Halaman Daftar StyleMe</title>
+	<title>Halaman Reset Password Goket</title>
 	<style type="text/css">
 		body {
 			font-family: Montserrat;
-			background-color: pink;
+			background-color: #E05B36;
 			margin: 0;
 			overflow-x: hidden;
 		}
@@ -65,20 +67,21 @@
 			margin: 0;
 		}
 
-		#registerform {
+		#passwordform {
 			position: relative;
-			top: 51px;
+			top: 139px;
 			left: 150px;
-			height: 581px;
+			height: 453px;
 			width: 517px;
-			background-color:white;
+            vertical-align: middle;
+			background-color: white;
 			border-radius: 30px;
 			box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
 		}
 
 		h1 {
 			text-align: left;
-			color: pink;
+			color: #E05B36;
 			font-size: 39.06px;
 			padding: 0;
 			margin: 0;
@@ -86,7 +89,7 @@
 			top: 0;
 		}
 
-		#daftar {
+		#lupa-password {
 			text-align: left;
 			color: #969696;
 			font-size: 20px;
@@ -122,14 +125,13 @@
 			top: 10px;
 		}
 
-		input[type=password], 
-		input[type=text] {
+		input[type=password] {
 			border: 1px solid #969696;
 			font-size:16px;
 		}
 
-		input[type=submit]{
-			width: 212px;
+		input[type=submit] {
+            width: 212px;
 			height: 54px;
 			color: white;
 			border-radius: 30px;
@@ -137,22 +139,21 @@
 			font-size: 20px;
 			font-family: montserrat semibold;
 			cursor: pointer;
-			position: relative;
 			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
-			background-color: #DE0D4F;
+			background-color: #E09240;
 			transition: 0.3s;
 			display: inline-block;
 			vertical-align: middle;
 		}
 
 		input[type=submit]:hover {
-			background-color: white;
-			color: #DE0D4F;
-			border: 3px solid #DE0D4F;
+			background-color:white;
+			color: #E09240;
+			border: 3px solid #E09240;
 		}
 
-		#link-kembali{
-			color: #DE0D4F;
+        #link-kembali{
+			color: #E09240;
 			font-family: montserrat semibold;
 			font-size: 20px;
 			height: 54px;
@@ -165,11 +166,12 @@
 			position: relative;
 			top: 25px;
 		}
-		#link-kembali:hover {
+
+        #link-kembali:hover {
 			text-decoration: underline;
 		}
 
-		hr.styleme{
+        hr.goket{
 			width: 259px;
 			height: 0;
 			background-color: white;
@@ -223,15 +225,8 @@
 			height: 192px;
 		}
 		
-		/* CSS untuk pop-up Username sudah terpakai */
-		#usernameused{
-			text-align: center;
-			width: 340px;
-			height: 188px;
-		}
-
-		/* CSS untuk pop-up Username sudah terpakai */
-		#regisberhasil{
+		/* CSS untuk pop-up password berhasil dan tidak berhasil diubah*/
+		#berhasil, #gagal{
 			text-align: center;
 			width: 340px;
 			height: 188px;
@@ -239,7 +234,7 @@
 
 		.button-kembali{
 			padding: 10px 20px;
-			background-color: #DE0D4F; 
+			background-color: #E05B36; 
 			border-radius: 30px;
 			border: none;
 			position: relative;
@@ -254,11 +249,10 @@
 			background-color: #FFFFFF;
 			color: #E05B36;
 			text-align: center;
-			outline: 3px solid #DE0D4F;
+			outline: 3px solid #E05B36;
 			outline-offset: -3px;
 			cursor: pointer;
 		}
-
 	</style>
 </head>
 <body>
@@ -266,48 +260,40 @@
 		<div class="col12">
 			<!-- Goket & Gambar -->
 			<div class="col5" style="position: relative; top: 100px; text-align: right;">
-				<p id="goket">StyleMe</p>
+				<p id="goket">Goket</p>
 				<img src="login-pic.svg" style="position: relative; top: 51px;">
 			</div>
 
-			<!-- Tempat Form Daftar -->
-			<div class="col7" id="registerform">
+			<!-- Tempat Form Lupa Password-->
+			<div class="col7" id="passwordform">
 				<!-- Header -->
 				<div class="row" style="position: relative; padding-left: 41px; top: 50px;">
-					<h1>Selamat Datang</h1>
-					<p id="daftar">Isi data diri Anda untuk mendaftar</p>
+					<h1>Reset Password</h1>
+					<p id="lupa-password">Mohon masukkan password baru Anda</p>
 				</div>
 				<!-- Form -->
-				<form action="register_check.php" method="POST">
-					<!-- Username -->
-					<div style="position: relative; top: 0; padding-left: 41px;">
-						<label>Username</label>
-						<input type="text" name='username' required>
-					</div>
-
-					<!-- No.Handphone -->
-					<div style="position: absolute; top: 81px; padding-left: 41px;">
-						<label>No. Handphone</label>
-						<input type="text" name='no_handphone' required>
-					</div>
+				<form action="reset_password_check.php" method="POST">
+					<!-- Untuk mengirimkan username dan no_hp ke reset_password_check.php -->
+					<input type="hidden" name='username' value="<?php echo $_POST['username'];?>">
+					<input type="hidden" name='no_handphone' value="<?php echo $_POST['no_hp'];?>">
 
 					<!-- Password -->
-					<div style="position: absolute; top: 162px; padding-left: 41px;">
+					<div style="position: relative; top: 0; padding-left: 41px;">
 						<label>Password</label>
 						<input type="password" name='password' required>
 					</div>
 
 					<!-- Re-check Password -->
-					<div style="position: absolute; top: 243px; padding-left: 41px;">
+					<div style="position: absolute; top: 81px; padding-left: 41px;">
 						<label>Konfirmasi Password</label>
 						<input type="password" name='confirm_password' required>
 					</div>
-					
-					<div class="col12" style="position: relative; top: 274px; vertical-align: middle;">
+
+					<div class="col12" style="position: relative; top: 131px; vertical-align: middle;">
 						<!-- Kembali ke Login -->
-						<a id="link-kembali" href="index.php">Kembali</a>
+						<a id="link-kembali" href="lupa_password.php">Kembali</a>
 						<!-- Submit -->
-						<input type="submit" value="Daftar" href="index.php">
+						<input type="submit" name= "submit_password" value="Ubah Password" href="reset_password_check.php">
 					</div>
 				</form>
 			</div>
@@ -315,8 +301,8 @@
 
 		<!-- Goket 2022 -->
 		<div class="col12" style="position: absolute; bottom: 0;">
-			<hr class="styleme">
-			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; StyleMe 2024SSS. Hak Cipta Dilindungi</p>
+			<hr class="goket">
+			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; Goket 2022. Hak Cipta Dilindungi</p>
 		</div>
 
 		<!-- Pop-up Password & Konfirmasi Password Tidak Sama-->
@@ -325,19 +311,18 @@
 			<div id="passconerror" class="popup">
 				<div class="popupbox" id="passcon">
 					<p style="font-size: 20px; font-family: montserrat semibold; padding: 40px 0 0 0; text-align: center; margin: 0;">Password dan Konfirmasi Password<br>Tidak Sama!</p>
-					<button class="button-kembali" onclick="location.href='register.php'">Kembali</button>
+					<button class="button-kembali" onclick="location.href='lupa_password.php'">Kembali</button>
 				</div>
 			</div>
 		</div>
 
-		<!-- Pop-up Username Sudah Terpakai-->
+		<!-- Pop-up Password Berhasil Diubah-->
 		<div class="col12">
 			<!-- Pop-up box -->
-			<div id="usernameusederror" class="popup">
-				<div class="popupbox" id="usernameused">
-					<p style="font-size: 20px; font-family: montserrat semibold; padding: 40px 0 0 0; text-align: center; margin: 0;">Username sudah terpakai!</p>
-					<p style="font-size: 16px; font-family: montserrat medium; padding: 5px 0 0 0; text-align: center; margin: 0;">Mohon pilih username lain</p>
-					<button class="button-kembali" style="top: 26px;" onclick="location.href='register.php'">Kembali</button>
+			<div id="passberhasil" class="popup">
+				<div class="popupbox" id="berhasil">
+					<p style="font-size: 20px; font-family: montserrat semibold; padding: 40px 0 0 0; text-align: center; margin: 0;">Password Berhasil Diubah!</p>
+					<button class="button-kembali" style="top: 50px;" onclick="location.href='index.php'">OK</button>
 				</div>
 			</div>
 		</div>
@@ -345,11 +330,10 @@
 		<!-- Pop-up Registrasi Berhasil-->
 		<div class="col12">
 			<!-- Pop-up box -->
-			<div id="regissuccess" class="popup">
-				<div class="popupbox" id="regisberhasil">
-					<p style="font-size: 20px; font-family: montserrat semibold; padding: 40px 0 0 0; text-align: center; margin: 0;">Registrasi Berhasil!</p>
-					<p style="font-size: 16px; font-family: montserrat medium; padding: 5px 0 0 0; text-align: center; margin: 0;">Silahkan login dengan akun baru anda</p>
-					<button class="button-kembali" style="top: 26px;" onclick="location.href='index.php'">OK</button>
+			<div id="passgagal" class="popup">
+				<div class="popupbox" id="gagal">
+					<p style="font-size: 20px; font-family: montserrat semibold; padding: 40px 0 0 0; text-align: center; margin: 0;">Password Tidak<br>Berhasil Diubah!</p>
+					<button class="button-kembali" style="top: 26px;" onclick="location.href='index.php'">Kembali</button>
 				</div>
 			</div>
 		</div>

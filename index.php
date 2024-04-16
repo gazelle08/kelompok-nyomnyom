@@ -54,7 +54,7 @@
 			width: 100%;
 		}
 
-		#goket {
+		#styleme {
 			color: white;
 			font-size: 80px;
 			font-weight: bold;
@@ -142,7 +142,7 @@
 		}
 
 		input[type=submit] {
-			background-color: #E05B36;
+			background-color: #DE0D4F;
 			position: relative;
 			top: 136px;
 		}
@@ -163,7 +163,7 @@
 			top: 153px;
 		}
 
-		hr.goket{
+		hr.styleme{
 			width: 259px;
 			height: 0;
 			background-color: white;
@@ -178,15 +178,15 @@
 		}
 
 		#button-daftar {
-			background-color: #E09240;
+			background-color: #F98CB9;
 			position: relative;
 			top: 177px;
 		}
 
 		#button-daftar:hover {
 			background-color: white;
-			color: #E05B36;
-			border: 3px solid #E05B36;
+			color: #F98CB9;
+			border: 3px solid #F98CB9;
 		}
 
 		#lupa-password {
@@ -267,9 +267,9 @@
 <body>
 	<div style="width: 100%; height: 100%; position: absolute;">
 		<div class="col12">
-			<!-- Goket & Gambar -->
+			<!-- Styleme & Gambar -->
 			<div class="col5" style="position: relative; top: 100px; text-align: right;">
-				<p id="goket">Goket</p>
+				<p id="styleme">StyleMe</p>
 				<img src="login-pic.svg" style="position: relative; top: 51px;">
 			</div>
 
@@ -278,7 +278,7 @@
 				<!-- Header -->
 				<div class="row" style="position: relative; padding-left: 41px; top: 50px;">
 					<h1>Selamat Datang</h1>
-					<p id="masuk">Silahkan masuk untuk lanjut</p>
+					<p id="masuk">Silahkan masukan username dan password</p>
 				</div>
 				<!-- Form -->
 				<form action="login_check.php" method="POST">
@@ -311,10 +311,10 @@
 			</div>
 		</div>
 
-		<!-- Goket 2022 -->
+		<!-- StyleMe 2022 -->
 		<div class="col12" style="position: absolute; bottom: 0;">
-			<hr class="goket">
-			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; Goket 2022. Hak Cipta Dilindungi</p>
+			<hr class="StyleMe">
+			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; StyleMe 2022. Hak Cipta Dilindungi</p>
 		</div>
 
 		<!-- Pop-up -->
