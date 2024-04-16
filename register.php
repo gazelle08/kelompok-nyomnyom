@@ -7,7 +7,7 @@
 	<style type="text/css">
 		body {
 			font-family: Montserrat;
-			background-color: pink;
+			background-color: #DE0D4F;
 			margin: 0;
 			overflow-x: hidden;
 		}
@@ -78,7 +78,7 @@
 
 		h1 {
 			text-align: left;
-			color: pink;
+			color: black;
 			font-size: 39.06px;
 			padding: 0;
 			margin: 0;
@@ -88,7 +88,7 @@
 
 		#daftar {
 			text-align: left;
-			color: #969696;
+			color: #7F7F7F;
 			font-size: 20px;
 			padding: 0;
 			margin: 0;
@@ -264,12 +264,10 @@
 <body>
 	<div style="width: 100%; height: 100%; position: absolute;">
 		<div class="col12">
-			<!-- Goket & Gambar -->
-			<div class="col5" style="position: relative; top: 100px; text-align: right;">
-				<p id="goket">StyleMe</p>
-				<img src="login-pic.svg" style="position: relative; top: 51px;">
-			</div>
-
+      	<div class="col5" style="position: relative; top: 50px; text-align: right;">
+        <p id="styleme">StyleMe</p>
+        <img src="styleme.png" style="width: 62%; height: auto; position: relative; top: -20px;">
+      </div>
 			<!-- Tempat Form Daftar -->
 			<div class="col7" id="registerform">
 				<!-- Header -->
@@ -281,25 +279,25 @@
 				<form action="register_check.php" method="POST">
 					<!-- Username -->
 					<div style="position: relative; top: 0; padding-left: 41px;">
-						<label>Username</label>
+						<label style="color: #7F7F7F;">Username</label>
 						<input type="text" name='username' required>
 					</div>
 
 					<!-- No.Handphone -->
 					<div style="position: absolute; top: 81px; padding-left: 41px;">
-						<label>No. Handphone</label>
+						<label style="color: #7F7F7F;">No. Handphone</label>
 						<input type="text" name='no_handphone' required>
 					</div>
 
 					<!-- Password -->
 					<div style="position: absolute; top: 162px; padding-left: 41px;">
-						<label>Password</label>
+						<label style="color: #7F7F7F;">Password</label>
 						<input type="password" name='password' required>
 					</div>
 
 					<!-- Re-check Password -->
 					<div style="position: absolute; top: 243px; padding-left: 41px;">
-						<label>Konfirmasi Password</label>
+						<label style="color: #7F7F7F;">Konfirmasi Password</label>
 						<input type="password" name='confirm_password' required>
 					</div>
 					
@@ -316,7 +314,7 @@
 		<!-- Goket 2022 -->
 		<div class="col12" style="position: absolute; bottom: 0;">
 			<hr class="styleme">
-			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; StyleMe 2024SSS. Hak Cipta Dilindungi</p>
+			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; StyleMe 2024. Hak Cipta Dilindungi</p>
 		</div>
 
 		<!-- Pop-up Password & Konfirmasi Password Tidak Sama-->

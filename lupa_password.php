@@ -6,7 +6,7 @@
 	<style type="text/css">
 		body {
 			font-family: Montserrat;
-			background-color: pink;
+			background-color: #DE0D4F;
 			margin: 0;
 			overflow-x: hidden;
 		}
@@ -78,7 +78,7 @@
 
 		h1 {
 			text-align: left;
-			color: #E05B36;
+			color: black;
 			font-size: 39.06px;
 			padding: 0;
 			margin: 0;
@@ -88,7 +88,7 @@
 
 		#lupa-password {
 			text-align: left;
-			color: #969696;
+			color: #7F7F7F;
 			font-size: 20px;
 			padding: 0;
 			margin: 0;
@@ -138,7 +138,7 @@
 			font-family: montserrat semibold;
 			cursor: pointer;
 			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
-			background-color: #E09240;
+			background-color: #DE0D4F;
 			transition: 0.3s;
 			display: inline-block;
 			vertical-align: middle;
@@ -146,12 +146,12 @@
 
 		input[type=submit]:hover {
 			background-color:white;
-			color: #E09240;
-			border: 3px solid #E09240;
+			color: #DE0D4F;
+			border: 3px solid #DE0D4F;
 		}
 
         #link-kembali{
-			color: #E09240;
+			color: #DE0D4F;
 			font-family: montserrat semibold;
 			font-size: 20px;
 			height: 54px;
@@ -248,12 +248,11 @@
 </head>
 <body>
 	<div style="width: 100%; height: 100%; position: absolute;">
-		<div class="col12">
-			<!-- styleme & Gambar -->
-			<div class="col5" style="position: relative; top: 100px; text-align: right;">
-				<p id="styleme">StyleMe</p>
-				<img src="login-pic.svg" style="position: relative; top: 51px;">
-			</div>
+    <div class="col12">
+      <div class="col5" style="position: relative; top: 85px; text-align: right;">
+        <p id="styleme">StyleMe</p>
+        <img src="styleme.png" style="width: 62%; height: auto; position: relative; top: -30px;">
+      </div>
 
 			<!-- Tempat Form Lupa Password-->
 			<div class="col7" id="passwordform">
@@ -266,13 +265,13 @@
 				<form action="lupa_password_check.php" method="POST">
 					<!-- Username -->
 					<div style="position: relative; top: 0; padding-left: 41px;">
-						<label>Username</label>
+						<label style="color: #7F7F7F;">Username</label>
 						<input type="text" name='username' required>
 					</div>
 
 					<!-- No.Handphone -->
 					<div style="position: absolute; top: 81px; padding-left: 41px;">
-						<label>Email</label>
+						<label style="color: #7F7F7F;">Email</label>
 						<input type="text" name='email' required>
 					</div>
 					
@@ -289,7 +288,7 @@
 		<!-- styleme 2022 -->
 		<div class="col12" style="position: absolute; bottom: 0;">
 			<hr class="styleme">
-			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; styleme 2022. Hak Cipta Dilindungi</p>
+			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; Styleme 2024. Hak Cipta Dilindungi</p>
 		</div>
 
 		<!-- Pop-up Password & Konfirmasi Password Tidak Sama-->
