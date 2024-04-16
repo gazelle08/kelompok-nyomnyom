@@ -134,7 +134,7 @@
 			
 			$username = $_SESSION['username'];
 
-			$query = "SELECT * FROM user WHERE username ='$username'";
+			$query = "SELECT * FROM pengguna WHERE username ='$username'";
 			$result = mysqli_query($conn, $query);
 
 			// Memasukkan data yang diambil ke dalam variable
