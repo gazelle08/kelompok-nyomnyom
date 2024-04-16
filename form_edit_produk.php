@@ -12,7 +12,7 @@ include 'config.php';
     $id = ($_GET["id"]);
 
     // Displays data from database based on id
-    $query = "SELECT * FROM data_product WHERE id='$id'";
+    $query = "SELECT * FROM produk WHERE id='$id'";
     $result = mysqli_query($conn, $query);
     // If data couldn't be shown, then this error will occur:
     if(!$result){
