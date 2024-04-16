@@ -155,13 +155,13 @@
 		}
 
 		hr.belum-daftar {
-			width: 76px;
-			height:3px;
-			border: 2px solid #969696;
-			background-color:#969696;
-			border-radius:30px;
-			position: relative;
-			top: 153px;
+  		width: 76px;
+  		height: 3px;
+  		border: 2px solid #969696;
+  		background-color: #969696;
+  		border-radius: 30px;
+  		position: relative;
+  		top: 153px;
 		}
 
 		hr.styleme {
@@ -176,6 +176,7 @@
   		margin-left: -129.5px;
   		bottom: 59px;
 		}
+		
 		#button-daftar {
 			background-color: #FBB4C6;
 			position: relative;
