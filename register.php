@@ -55,7 +55,7 @@
 			width: 100%;
 		}
 
-		#goket {
+		#styleme {
 			color: white;
 			font-size: 80px;
 			font-weight: bold;

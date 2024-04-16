@@ -56,7 +56,7 @@
 
 		#styleme {
 			color: white;
-			font-size: 70px;
+			font-size: 80px;
 			font-weight: bold;
 			position: relative;
 			top: 0;
@@ -164,20 +164,18 @@
 			top: 153px;
 		}
 
-		hr.styleme{
-			width: 259px;
-			height: 0;
-			background-color: white;
-			border: 1px solid white;
-			padding: 0;
-			margin: 0;
-			position: absolute;
-			right:25%;
-			left:50%;
-			margin-left:-129.5px;
-			bottom: 59px;
+		hr.styleme {
+  		display: none; 
+ 		width: 259px;
+  		height: 0;
+  		background-color: transparent; 
+  		border: none;
+ 		position: absolute;
+  		right: 25%;
+  		left: 50%;
+  		margin-left: -129.5px;
+  		bottom: 59px;
 		}
-
 		#button-daftar {
 			background-color: #FBB4C6;
 			position: relative;
