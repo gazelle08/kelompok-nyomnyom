@@ -73,7 +73,7 @@
         #ubah{
 			font-size: 16px;
             color: white;
-			background-color: #E05B36;
+			background-color: #DE0D4F;
             padding: 10px 20px;
 			font-family: montserrat semibold;
 			transition: 0.3s;
@@ -109,9 +109,9 @@
         }
         .dropdown:hover #ubah{
             background-color: white;
-			color: #E05B36;
+			color: #DE0D4F;
             font-family: montserrat semibold;
-            outline: 3px solid #E05B36;
+            outline: 3px solid #DE0D4F;
             outline-offset: -3px;
         }
 
@@ -129,7 +129,7 @@
 			font-size: 37px;
 			font-family: montserrat medium;
 			display: inline-block;
-			color: #E05B36;
+			color: #DE0D4F;
 		}
 
 	</style>
@@ -145,7 +145,7 @@
 			<div class="row">
 				<div id="pesanan-user">
 					<p style="display: inline; font-family: Montserrat medium; margin: 0;">Pesanan </p>
-					<p style="color: #E05B36; display: inline; font-family: montserrat semibold; margin: 0;"><?php echo $_SESSION['username'];?></p>
+					<p style="color: #DE0D4F; display: inline; font-family: montserrat semibold; margin: 0;"><?php echo $_SESSION['username'];?></p>
 				</div>
 			</div>
 
@@ -211,11 +211,11 @@
                             /* Untuk mengubah warna sesuai dengan status  */
                             <?php
                             if ($row['status']=="Baru") {
-                                echo "#E02B58";
+                                echo "#16FF00";
                             } elseif ($row['status']=="Siap Dikirim") {
-                                echo "#1D3794";
+                                echo "#EF891D";
                             } else {
-                                echo "#06956A";
+                                echo "ED0B0B";
                             }?>;"><b><?php echo $row['status'];?><b></td>
                             <td>
                                 <div class="dropdown">
