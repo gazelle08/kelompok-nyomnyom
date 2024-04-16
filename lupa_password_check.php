@@ -7,7 +7,7 @@
         $username = $_POST['username'];
         $email = $_POST['email'];
 
-        $query="SELECT * FROM admin WHERE username = '$username' AND email = '$email'";
+        $query="SELECT * FROM pengguna WHERE username = '$username' AND email = '$email'";
         $result = mysqli_num_rows(mysqli_query($conn, $query));
 
         if($result > 0){

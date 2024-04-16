@@ -7,8 +7,8 @@
 		$password = sha1($password);
 		$no_handphone = mysqli_real_escape_string($conn, $_POST['no_handphone']);
 
-	    $cek_user = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM user WHERE username= '$username'"));
-	    $no_id = mysqli_num_rows(mysqli_query($conn, "SELECT id FROM user")) + 1;
+	    $cek_user = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM pengguna WHERE username= '$username'"));
+	    $no_id = mysqli_num_rows(mysqli_query($conn, "SELECT id FROM pengguna")) + 1;
 	    if ($cek_user > 0) {
 			// Pop-up versi CSS
 			header('Location: register.php#usernameusederror');
@@ -19,7 +19,7 @@
 	        //       exit();
 	    }
 	    else {
-	        $sql = "INSERT INTO admin(id, username, password, no_hp) VALUES ('$no_id','$username', '$password', '$no_handphone')";
+	        $sql = "INSERT INTO pengguna(id, username, password, no_hp) VALUES ('$no_id','$username', '$password', '$no_handphone')";
 	        if (mysqli_query($conn, $sql)){
 				// Pop-up versi CSS
 				header('Location: register.php#regissuccess');
