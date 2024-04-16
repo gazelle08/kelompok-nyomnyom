@@ -19,7 +19,7 @@
 	        //       exit();
 	    }
 	    else {
-	        $sql = "INSERT INTO admin(id, username, password, no_hp) VALUES ('$no_id','$username', '$password', '$no_handphone')";
+	        $sql = "INSERT INTO pengguna(id, username, password, no_hp) VALUES ('$no_id','$username', '$password', '$no_handphone')";
 	        if (mysqli_query($conn, $sql)){
 				// Pop-up versi CSS
 				header('Location: register.php#regissuccess');
