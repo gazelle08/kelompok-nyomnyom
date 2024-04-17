@@ -192,7 +192,7 @@
 
                 <div class="form-group">
                   <label>Status Laporan</label>
-                  <text area name="status_laporan" id="status_laporan"></text>
+                  <input type name="status_laporan" id="status_laporan"></text>
                 </div>
 
                 <div class="form-group">
