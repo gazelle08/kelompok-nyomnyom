@@ -144,7 +144,7 @@ include 'config.php';
 						    		<td style='color: #E0D74C;'><img src=star.svg style='margin: 0 5px 0 0; position: relative; top: 3px;'>".$row["rating"]. "</td>
 						    		<td>".$row["tanggal"]. "</td>
 						    		<td>".$row["komentar"]. "</td>
-						    		<td><a href='form-lapor.php?pelanggan=".$row['pelanggan']."' id='link-lapor'>"."Lapor". "</a></td>
+						    		<td><a href='form_lapor.php?pelanggan=".$row['pelanggan']."' id='link-lapor'>"."Lapor". "</a></td>
 						    	  </tr>";
 							$jlh_garis++;
 							if ($jlh_garis < 5) {
