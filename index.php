@@ -299,7 +299,7 @@ include 'config.php';
 					
 					<div class="col12">
 						<!-- Submit -->
-						<input type="submit" value="Masuk" href="home page/home_page.php">
+						<input type="submit" value="Masuk" name="login">
 
 						<!-- Belum punya akun? -->
 						<hr class="belum-daftar">

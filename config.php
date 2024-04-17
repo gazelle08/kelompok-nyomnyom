@@ -1,12 +1,11 @@
 <?php 
-session_start();
 $user 		= "root";
 $server 	= "localhost";
 $password 	= "";
 $db			= "styleme";
-$koneksi 	= mysqli_connect($server, $user, $password, $db);
+$conn 	= mysqli_connect($server, $user, $password, $db);
 
-if($koneksi == false)
+if($conn == false)
 {
 	echo "Tidak Terkoneksi";
 }

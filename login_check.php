@@ -12,7 +12,7 @@ if(isset($_SESSION['username'])) {
 if(isset($_POST['login'])) {
     // Ambil nilai username dan password dari form
     $username = $_POST['username'];
-    $password = md5($_POST['password']);
+    $password = $_POST['password'];
 
     // Pastikan username dan password tidak kosong
     if(!empty($username) && !empty($password)) {
@@ -21,7 +21,7 @@ if(isset($_POST['login'])) {
 
         // Periksa jumlah baris yang sesuai dengan kredensial yang ditemukan
         $num_rows = mysqli_num_rows($sql);
-        
+        error_log("jumlah rows = " .$num_rows);
         if($num_rows > 0){
             // Jika kredensial benar, daftarkan sesi pengguna dan arahkan ke halaman utama
             $row = mysqli_fetch_assoc($sql);
