@@ -1,6 +1,5 @@
-<!-- Autentikasi -->
-<?php require('../config.php');
-    if(is_logged_in()){
+<?php
+include 'config.php';
 ?>
 
 <!-- Connect to database -->
@@ -205,7 +204,7 @@
 <body>
 	<?php $this_page='produk'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php require("../page_template.php"); ?>
+	<?php require("page_template.php"); ?>
 
 	<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content">
@@ -276,7 +275,7 @@
 				<!-- Pop-up sudah terkonfirmasi -->
 				<div id="konfirmasi" class="konfirmasi">
 					<div class="konfirmasi-lapor" id="berhasil">
-						<img src=../confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
+						<img src=confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
 						<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Produk anda sudah ditambah!</p>
 						<button class="button-ok" onclick="location.href='produk_page.php'">OK</button>
 					</div>
@@ -287,8 +286,3 @@
 
 </body>
 </html>
-
-<!-- Autentikasi -->
-<?php  } else {
-    header('Location: ../index.php');
-}

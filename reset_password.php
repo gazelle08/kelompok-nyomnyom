@@ -1,11 +1,11 @@
-<?php 
-require("config.php");
+<?php
+include 'config.php';
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Halaman Reset Password Goket</title>
+	<title>Halaman Reset Password styleme</title>
 	<style type="text/css">
 		body {
 			font-family: Montserrat;
@@ -57,7 +57,7 @@ require("config.php");
 			width: 100%;
 		}
 
-		#goket {
+		#styleme {
 			color: white;
 			font-size: 80px;
 			font-weight: bold;
@@ -171,7 +171,7 @@ require("config.php");
 			text-decoration: underline;
 		}
 
-        hr.goket{
+        hr.styleme{
 			width: 259px;
 			height: 0;
 			background-color: white;
@@ -258,7 +258,7 @@ require("config.php");
 <body>
 	<div style="width: 100%; height: 100%; position: absolute;">
 		<div class="col12">
-			<!-- Goket & Gambar -->
+			<!-- styleme & Gambar -->
 			<div class="col5" style="position: relative; top: 100px; text-align: right;">
 				<p id="styleme">StyleMe</p>
 				<img src="login-pic.svg" style="position: relative; top: 51px;">
@@ -299,10 +299,10 @@ require("config.php");
 			</div>
 		</div>
 
-		<!-- Goket 2022 -->
+		<!-- styleme 2022 -->
 		<div class="col12" style="position: absolute; bottom: 0;">
-			<hr class="goket">
-			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; Goket 2022. Hak Cipta Dilindungi</p>
+			<hr class="styleme">
+			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; StyleMe 2024. Hak Cipta Dilindungi</p>
 		</div>
 
 		<!-- Pop-up Password & Konfirmasi Password Tidak Sama-->

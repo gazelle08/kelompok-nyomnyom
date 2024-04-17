@@ -1,6 +1,5 @@
 <?php
-// Untuk mengakses database
-require('config.php');
+include 'config.php';
 
 //memasukkan data kedalam database untuk dimasukkan ke dalam summary di homepage
 $username = $_SESSION['username']; //username dari session

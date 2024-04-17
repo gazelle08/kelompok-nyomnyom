@@ -1,5 +1,6 @@
-<?php require("config.php"); ?>
-
+<?php
+include 'config.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -311,7 +312,7 @@
 			</div>
 		</div>
 
-		<!-- Goket 2022 -->
+		<!-- styleme 2024 -->
 		<div class="col12" style="position: absolute; bottom: 0;">
 			<hr class="styleme">
 			<p style="color: white; font-size: 16px; font-family: montserrat semibold; margin: 0; padding: 0; position: relative; bottom: 20px;">&copy; StyleMe 2024. Hak Cipta Dilindungi</p>

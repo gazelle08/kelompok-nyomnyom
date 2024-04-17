@@ -1,4 +1,6 @@
-<?php require("config.php"); ?>
+<?php
+include 'config.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>

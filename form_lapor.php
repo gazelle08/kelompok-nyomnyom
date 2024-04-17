@@ -1,5 +1,5 @@
-<?php require('config.php');
-    if(is_logged_in()){
+<?php
+include 'config.php';
 ?>
 
 <!DOCTYPE html>
@@ -177,7 +177,7 @@
 <body>
 	<?php $this_page='pelaporan'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php require("/page_template.php"); ?>
+	<?php require("page_template.php"); ?>
 
 		<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content"> <!-- Intinya style dari id="page-content" tapi tanpa padding -->
@@ -217,7 +217,7 @@
 							</tr>
 							<tr>
 								<th>Rating</td>
-								<td style='color: #E0D74C;'><img src=../star.svg style='margin: 0 5px 0 0; position: relative; top: 3px;'><?php echo $hasil['rating']?></td>
+								<td style='color: #E0D74C;'><img src=star.svg style='margin: 0 5px 0 0; position: relative; top: 3px;'><?php echo $hasil['rating']?></td>
 							</tr>
 							<tr>
 								<th>Komentar</td>
@@ -265,8 +265,3 @@
 	</div> <!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
 </body>
 </html>
-
-<!-- Autentikasi -->
-<?php  } else {
-    header('Location: ../index.php');
-}

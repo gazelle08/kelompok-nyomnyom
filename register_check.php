@@ -1,5 +1,5 @@
-<?php 
-    include "config.php";
+<?php
+include 'config.php';
 
     if ($_POST['password'] == $_POST['confirm_password']){
     	$username = mysqli_real_escape_string($conn, $_POST['username']);

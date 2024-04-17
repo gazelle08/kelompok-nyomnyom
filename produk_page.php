@@ -1,9 +1,6 @@
-<!-- Autentikasi -->
 <?php
-	require('../config.php');
-    if(is_logged_in()){
+include 'config.php';
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -238,7 +235,7 @@
 <body>
 	<?php $this_page='produk'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php require("../page_template.php"); ?>
+	<?php require("page_template.php"); ?>
 
 		<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content">
@@ -281,7 +278,7 @@
 					  	<!--output data of each row -->
 						<?php
 						//Run query to display all data based on id 
-						$query = "SELECT * FROM data_product ORDER BY id ASC LIMIT $start_from, $per_page_record";
+						$query = "SELECT * FROM produk ORDER BY id ASC LIMIT $start_from, $per_page_record";
 						$result = mysqli_query($conn, $query);
 						
 						// Check if there is error when running query
@@ -312,9 +309,9 @@
 							<td style="padding: 0;">Rp. <?php echo $row['harga'];?></td>
 						    <td><?php echo $row['deskripsi']; ?></td>
 							<!-- Form untuk memunculkan popup untuk penghapusan dan pengeditan-->
-							<form action="produk_page.php?id=<?php echo $row['id'];?>#tanya-batal" method="POST">
-								<td><a id="ubah" href="form_edit_produk.php?id=<?php echo $row['id'];?>&page=<?php echo $page;?>">Ubah</a></td>
-								<td><input type="hidden" value="hapus"><a id="hapus" href="produk_page.php?id=<?php echo $row['id'];?>&page=<?php echo $page;?>#tanya-batal">Hapus</a></td>
+							<form action="produk_page.php"=<?php echo $row['id'];?>#tanya-batal" method="POST">
+								<td><a id="ubah" href="form_edit_produk.php"=<?php echo $row['id'];?>&page=<?php echo $page;?>">Ubah</a></td>
+								<td><input type="hidden" value="hapus"><a id="hapus" href="produk_page.php"=<?php echo $row['id'];?>&page=<?php echo $page;?>#tanya-batal">Hapus</a></td>
 							</form>
 						    </tr>
 						<!-- Tutup While -->
@@ -329,7 +326,7 @@
 
 					<div class="col12" id="page">
 							<?php  
-								$query = "SELECT COUNT(*) FROM data_product";     
+								$query = "SELECT COUNT(*) FROM produk";     
 								$rs_result = mysqli_query($conn, $query);     
 								$row = mysqli_fetch_row($rs_result);     
 								$total_records = $row[0];     
@@ -367,14 +364,14 @@
 						<p style="font-size: 20px; font-family: montserrat semibold; padding: 40px 0 0 30px; text-align: left; margin: 0;">Hapus produk?</p>
 						<a href='' class='link-batal' style="display: inline-block; margin: 0; padding: 0; position: relative; top: 50px;">Batal</a>
 						<!-- Menghapus produk dengan mengambil id dari input hapus -->
-						<a class="button-iyahapus" href="proses_hapus_produk.php?id=<?php echo $_GET['id'];?>&page=<?php echo $page;?>">Iya, Hapus</a>
+						<a class="button-iyahapus" href="proses_hapus_produk.php"=<?php echo $_GET['id'];?>&page=<?php echo $page;?>">Iya, Hapus</a>
 					</div>
 				</div>
 
 				<!-- Pop-up sudah terkonfirmasi -->
 				<div id="iya-batal" class="konfirmasi">
 					<div class="konfirmasi-batal" id="berhasil">
-						<img src=../confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
+						<img src=confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
 						<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Produk anda sudah dihapus!</p>
 						<button class="button-ok" onclick="location.href='produk_page.php?page=<?php echo $page;?>'">OK</button>
 					</div>
@@ -384,9 +381,3 @@
 	 </div> <!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
 </body>
 </html>
-
-<!-- Autentikasi -->
-<?php
-} else {
-    header('Location: ../index.php');
-}
