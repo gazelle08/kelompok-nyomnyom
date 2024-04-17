@@ -1,6 +1,5 @@
 <?php
-// PHP untuk ubah status dari database
-include('config.php');
+include 'config.php';
 
 // ubah menjadi variable
 $id = $_GET['id'];

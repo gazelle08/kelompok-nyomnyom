@@ -1,7 +1,6 @@
 <!-- Autentikasi -->
 <?php
-	require('../config.php');
-    if(is_logged_in()){
+include 'config.php';
 ?>
 
 <!DOCTYPE html>
@@ -137,7 +136,7 @@
 <body>
 	<?php $this_page='pesanan'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php require("../page_template.php"); ?>
+	<?php require("page_template.php"); ?>
 
 		<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content">
@@ -277,9 +276,3 @@
 	 </div> <!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
 </body>
 </html>
-
-<!-- Autentikasi -->
-<?php
-} else {
-    header('Location: ../index.php');
-}

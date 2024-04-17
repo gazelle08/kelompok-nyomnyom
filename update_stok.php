@@ -1,8 +1,5 @@
 <?php
-//PHP untuk mengubah stok jika terdapat pesanan baru
-
-//untuk mengakses database
-require ('config.php');
+include 'config.php';
 
 //mengambil data dari db pesanan
 $query_pesanan_baru = "SELECT * FROM pesanan WHERE status = 1";

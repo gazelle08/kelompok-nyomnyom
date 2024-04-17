@@ -1,6 +1,5 @@
-<!-- Autentikasi -->
-<?php require('../config.php');
-    if(is_logged_in()){
+<?php
+include 'config.php';
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +76,9 @@
 <body>
 	<?php $this_page='beranda'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php require("../page_template.php"); ?>
+	<?php
+include 'page_template.php';
+?>
 
 	<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content">
@@ -187,8 +188,3 @@
 
 </body>
 </html>
-
-<!-- Autentikasi -->
-<?php  } else {
-    header('Location: ../index.php');
-}

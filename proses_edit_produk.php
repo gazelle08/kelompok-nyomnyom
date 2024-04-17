@@ -1,6 +1,5 @@
-<!-- Connect to database -->
 <?php
-include "config.php";
+include 'config.php';
 
 //Get page number from form
 $page = $_POST['page'];

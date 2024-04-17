@@ -1,6 +1,6 @@
 <!-- PHP untuk reset password -->
 <?php
-require ('config.php');
+include 'config.php';
 
 if ($_POST['submit_password']){
     $username = $_POST['username'];

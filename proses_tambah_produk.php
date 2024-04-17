@@ -1,7 +1,6 @@
 <!-- Connect to database -->
 <?php
-include "config.php";
-
+include 'config.php';
 // # Code 1
 // Create variable as vessel for the data from form
     // match it with the contents from name tag in the form

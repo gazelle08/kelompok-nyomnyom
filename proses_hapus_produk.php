@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+include 'config.php';
 //Untuk mengambil nomor halaman yang dikirim
 $page = $_GET['page'];
 

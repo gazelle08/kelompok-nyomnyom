@@ -1,14 +1,13 @@
 <?php
 include 'config.php';
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Pelaporan Pelanggan</title>
+	<title>Ulasan Pelanggan</title>
 	<style type="text/css">
-		#pelaporan-user{
+		#ulasan-user{
 			color: black;
 			position: relative;
 			text-align: left;
@@ -27,7 +26,7 @@ include 'config.php';
 			display: inline-block;
 			text-align: center;
 			top: 90px;
-			padding: 0 0 0 36px;
+			padding: 0 0 0 30px;
 		}
 		a{
 			font-size: 20px; 
@@ -37,8 +36,8 @@ include 'config.php';
 		}
 		table{
 			border-collapse: collapse;
-			padding: 0;
 			margin: 0;
+			padding: 0;
 		}
 		td{
 			font-size: 16px;
@@ -50,21 +49,9 @@ include 'config.php';
 		th{
 			font-size: 20px;
 			font-family: montserrat semibold;
+			height: 37px;
 			padding-top: 45px;
 		}
-
-		#link-lapor{
-			color: #E05B36;
-			font-family: montserrat semibold;
-			font-size: 20px;
-			text-decoration: none;
-			cursor: pointer;
-			transition: 0.3s;
-		}
-		#link-lapor:hover {
-			text-decoration: underline;
-		}
-
 		#garis{
 			border: none;
 			background-color: #DADADA;
@@ -93,18 +80,16 @@ include 'config.php';
 	</style>
 </head>
 <body>
-	<?php $this_page='pelaporan'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
+	<?php $this_page='ulasan'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
 	<?php require("page_template.php"); ?>
 
 		<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content"> <!-- Intinya style dari id="page-content" tapi tanpa padding -->
 			<div class="row">
-				<div id="pelaporan-user">
-					<p style="display: inline; font-family: montserrat medium; margin: 0;">Pelaporan </p><p style="color: #E05B36; display: inline; margin: 0;"><?php echo $_SESSION['username'];?></p>
+				<div id="ulasan-user">
+					<p style="display: inline; font-family: montserrat medium; margin: 0;">Ulasan </p><p style="color: #E05B36; display: inline; margin: 0;"><?php echo $_SESSION['username'];?></p>
 				</div>
-
-				<!-- Tabel -->
 				<div class="col12" style="position: absolute; top: 0; text-align: left;">
 					<div id="table-box">
 						<?php
@@ -119,18 +104,19 @@ include 'config.php';
 				    
 				        $start_from = ($page-1) * $per_page_record;     
 				    
-				        $query = "SELECT pelanggan, produk, rating, tanggal, komentar FROM ulasan LIMIT $start_from, $per_page_record";     
+				        $query = "SELECT pelanggan, produk, jumlah, total, rating, tanggal, komentar FROM ulasan LIMIT $start_from, $per_page_record";     
 				        $rs_result = mysqli_query ($conn, $query);
 						echo "<table>
 								<tr style='height: 79px;'>
-									<th style='width: 120px;'>Pelanggan</th>
-									<th style='width: 194px;'>Produk</th>
-									<th style='width: 121px;'>Rating</th>
-									<th style='width: 126px;'>Tanggal</th>
-									<th style='width: 214px;'>Komentar</th>
-									<th style='width: 115px;'></th>
+									<th style='width: 132px;'>Pelanggan</th>
+									<th style='width: 144px;'>Produk</th>
+									<th style='width: 87px;'>Jumlah</th>
+									<th style='width: 154px;'>Total</th>
+									<th style='width: 79px;'>Rating</th>
+									<th style='width: 116px;'>Tanggal</th>
+									<th style='width: 198px;'>Komentar</th>
 								</tr>
-								<hr style='width: 908px; position: absolute; border-radius: 5px; border: none; height: 2px; top: 79px; left: 25px; background-color: black; margin: 0; padding: 0;'>";
+								<hr style='width: 908px; position: absolute; border-radius: 5px; border: 1px solid black; top: 79px; left: 25px; background-color: black; margin: 0; padding: 0;'>";
 						  // output data of each row
 						$awal = 169;
 						$tambah = 0;
@@ -141,10 +127,11 @@ include 'config.php';
 						    echo "<tr>
 						    		<td>".$row["pelanggan"]. "</td>
 						    		<td>".$row["produk"]. "</td>
+									<td>".$row["jumlah"]. "</td>
+									<td>Rp. ".$row["total"]. "</td>
 						    		<td style='color: #E0D74C;'><img src=star.svg style='margin: 0 5px 0 0; position: relative; top: 3px;'>".$row["rating"]. "</td>
 						    		<td>".$row["tanggal"]. "</td>
 						    		<td>".$row["komentar"]. "</td>
-						    		<td><a href='form-lapor.php?pelanggan=".$row['pelanggan']."' id='link-lapor'>"."Lapor". "</a></td>
 						    	  </tr>";
 							$jlh_garis++;
 							if ($jlh_garis < 5) {
@@ -166,7 +153,7 @@ include 'config.php';
 								$total_pages = ceil($total_records / $per_page_record);     
 								// kembali ke halaman sebelumnya
 								if($page >= 2){
-									echo "<a href='pelaporan.php?page=".($page-1)."' id='page-num' style='padding: 0 20px 0 0;'>  &lt; </a>";
+									echo "<a href='ulasan.php?page=".($page-1)."' id='page-num' style='padding: 0 20px 0 0;'>  &lt; </a>";
 								} else {
 									echo "<a href='' id='page-num' style='padding: 0 20px 0 0; color: black'>  &lt; </a>";
 								}
@@ -177,11 +164,10 @@ include 'config.php';
 							<?php
 								// ke halaman selanjutnya
 								if($page < $total_pages){
-									echo "<a href='pelaporan.php?page=".($page+1)."' id='page-num' style='padding: 0 0 0 20px;'>  &gt; </a>"; 
+									echo "<a href='ulasan.php?page=".($page+1)."' id='page-num' style='padding: 0 0 0 20px;'>  &gt; </a>"; 
 								} else {
 									echo "<a href='' id='page-num' style='padding: 0 0 0 20px; color: black'>  &gt; </a>";
 								}
-								
 							?>
 						</div>
 					</div>
@@ -191,3 +177,4 @@ include 'config.php';
 	</div> <!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
 </body>
 </html>
+
