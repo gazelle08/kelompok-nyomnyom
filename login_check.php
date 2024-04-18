@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require ('config.php');
 $username = mysqli_real_escape_string($conn, $_POST['username']);
 $password = strip_tags($_POST['password']);
