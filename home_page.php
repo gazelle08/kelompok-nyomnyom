@@ -1,6 +1,5 @@
-<?php
-SESSION_START();
-include 'config.php';
+<!-- Autentikasi -->
+<?php require('config.php');
 ?>
 
 <!DOCTYPE html>
@@ -77,9 +76,7 @@ include 'config.php';
 <body>
 	<?php $this_page='beranda'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php
-include 'page_template.php';
-?>
+	<?php require("page_template.php"); ?>
 
 	<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content">

@@ -1,42 +1,47 @@
 <?php
-// Termasuk file konfigurasi
-include 'config.php';
 
-// Periksa apakah user sudah masuk, jika ya, arahkan ke halaman utama
-if(isset($_SESSION['username'])) {
-    header('Location: home_page.php');
-    exit;
-}
+require ('config.php');
+$username = mysqli_real_escape_string($conn, $_POST['username']);
+$password = strip_tags($_POST['password']);
+$password = sha1($password);
 
-// Periksa apakah form login sudah dikirimkan
-if(isset($_POST['login'])) {
-    // Ambil nilai username dan password dari form
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+if(isset($username) && isset($password) && !empty($username) && !empty($password))
+{
+    $sql = mysqli_query($conn, "SELECT username, password FROM user WHERE username = '$username' AND password = '$password'");
 
-    // Pastikan username dan password tidak kosong
-    if(!empty($username) && !empty($password)) {
-        // Lakukan kueri SQL untuk memeriksa kredensial user
-        $sql = mysqli_query($conn, "SELECT username, password FROM user WHERE username = '$username' AND password = '$password'");
+    //Check the number of users against database
+    //with the given criteria.  We're looking for 1 so 
+    //adding > 0 (greater than zero does the trick). 
+    $num_rows = mysqli_num_rows($sql);
+    
+    if($num_rows > 0){
 
-        // Periksa jumlah baris yang sesuai dengan kredensial yang ditemukan
-        $num_rows = mysqli_num_rows($sql);
-        error_log("jumlah rows = " .$num_rows);
-        if($num_rows > 0){
-            // Jika kredensial benar, daftarkan sesi user dan arahkan ke halaman utama
-            $row = mysqli_fetch_assoc($sql);
-            $_SESSION['username'] = $row['username'];
-            header('Location: home_page.php');
-            exit;
-        } else {
-            // Jika kredensial salah, arahkan kembali ke halaman login dengan pesan kesalahan
-            header('Location: index.php#konfirmasi');
-            exit;
-        }
-    } else {
-        // Jika username atau password kosong, arahkan kembali ke halaman login dengan pesan kesalahan
-        header('Location: index.php#konfirmasi');
-        exit;
+        //Lets grab and create a variable from the DB to register
+        //the user's session with.
+        $gid = mysqli_query($conn, "SELECT username, password FROM user WHERE username = '$username' AND password = '$password'");
+        $row = mysqli_fetch_assoc($gid);
+        $uid = $row['username'];
+        
+        // This is where we register the session.
+        $_SESSION['username'] = $uid;
+
+        //Send the user to the member page.  The userid is what the 
+        //session include runs against.
+        header('Location: home_page.php?username='.$uid);
     }
+
+    //If it doesn't check out -- throw an error.
+    else
+    {
+        // Pop-up versi CSS
+        header('Location: index.php#konfirmasi');
+        // Pop-up versi javascript
+        // echo "<script>alert('Informasi Login Invalid');window.location='index.php';</script>";
+    }
+} else {
+    // Pop-up versi CSS
+    header('Location: index.php#konfirmasi');
+    // Pop-up versi javascript
+    // echo "<script>alert('Informasi Login Invalid');window.location='index.php';</script>";
 }
 ?>
