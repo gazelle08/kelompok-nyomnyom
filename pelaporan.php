@@ -1,7 +1,9 @@
 <!-- Autentikasi -->
 <?php
-include 'config.php';
+	require('../config.php');
+    if(is_logged_in()){
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,7 +97,7 @@ include 'config.php';
 <body>
 	<?php $this_page='pelaporan'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php require("page_template.php"); ?>
+	<?php require("../page_template.php"); ?>
 
 		<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content"> <!-- Intinya style dari id="page-content" tapi tanpa padding -->
@@ -141,10 +143,10 @@ include 'config.php';
 						    echo "<tr>
 						    		<td>".$row["pelanggan"]. "</td>
 						    		<td>".$row["produk"]. "</td>
-						    		<td style='color: #E0D74C;'><img src=star.svg style='margin: 0 5px 0 0; position: relative; top: 3px;'>".$row["rating"]. "</td>
+						    		<td style='color: #E0D74C;'><img src=../star.svg style='margin: 0 5px 0 0; position: relative; top: 3px;'>".$row["rating"]. "</td>
 						    		<td>".$row["tanggal"]. "</td>
 						    		<td>".$row["komentar"]. "</td>
-						    		<td><a href='form_lapor.php?pelanggan=".$row['pelanggan']."' id='link-lapor'>"."Lapor". "</a></td>
+						    		<td><a href='form-lapor.php?pelanggan=".$row['pelanggan']."' id='link-lapor'>"."Lapor". "</a></td>
 						    	  </tr>";
 							$jlh_garis++;
 							if ($jlh_garis < 5) {
@@ -191,3 +193,9 @@ include 'config.php';
 	</div> <!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
 </body>
 </html>
+
+<!-- Autentikasi -->
+<?php
+} else {
+    header('Location: ../index.php');
+}
