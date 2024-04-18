@@ -278,7 +278,7 @@ include 'config.php';
 					  	<!--output data of each row -->
 						<?php
 						//Run query to display all data based on id 
-						$query = "SELECT * FROM produk ORDER BY id ASC LIMIT $start_from, $per_page_record";
+						$query = "SELECT * FROM data_product ORDER BY id ASC LIMIT $start_from, $per_page_record";
 						$result = mysqli_query($conn, $query);
 						
 						// Check if there is error when running query
@@ -326,7 +326,7 @@ include 'config.php';
 
 					<div class="col12" id="page">
 							<?php  
-								$query = "SELECT COUNT(*) FROM produk";     
+								$query = "SELECT COUNT(*) FROM data_product";     
 								$rs_result = mysqli_query($conn, $query);     
 								$row = mysqli_fetch_row($rs_result);     
 								$total_records = $row[0];     

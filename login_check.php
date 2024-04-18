@@ -2,7 +2,7 @@
 // Termasuk file konfigurasi
 include 'config.php';
 
-// Periksa apakah pengguna sudah masuk, jika ya, arahkan ke halaman utama
+// Periksa apakah user sudah masuk, jika ya, arahkan ke halaman utama
 if(isset($_SESSION['username'])) {
     header('Location: home_page.php');
     exit;
@@ -16,14 +16,14 @@ if(isset($_POST['login'])) {
 
     // Pastikan username dan password tidak kosong
     if(!empty($username) && !empty($password)) {
-        // Lakukan kueri SQL untuk memeriksa kredensial pengguna
-        $sql = mysqli_query($conn, "SELECT username, password FROM pengguna WHERE username = '$username' AND password = '$password'");
+        // Lakukan kueri SQL untuk memeriksa kredensial user
+        $sql = mysqli_query($conn, "SELECT username, password FROM user WHERE username = '$username' AND password = '$password'");
 
         // Periksa jumlah baris yang sesuai dengan kredensial yang ditemukan
         $num_rows = mysqli_num_rows($sql);
         error_log("jumlah rows = " .$num_rows);
         if($num_rows > 0){
-            // Jika kredensial benar, daftarkan sesi pengguna dan arahkan ke halaman utama
+            // Jika kredensial benar, daftarkan sesi user dan arahkan ke halaman utama
             $row = mysqli_fetch_assoc($sql);
             $_SESSION['username'] = $row['username'];
             header('Location: home_page.php');

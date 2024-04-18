@@ -12,7 +12,7 @@ if ($_POST['submit_password']){
     if($password == $confirm_password){
         $password = sha1($password);
         $confirm_password = sha1($confirm_password);
-        $update_password = "UPDATE pengguna SET password = '$password' WHERE username = '$username' AND no_hp = '$no_hp'";
+        $update_password = "UPDATE user SET password = '$password' WHERE username = '$username' AND no_hp = '$no_hp'";
         $result_password = mysqli_query($conn, $update_password);
 
         if ($result_password){

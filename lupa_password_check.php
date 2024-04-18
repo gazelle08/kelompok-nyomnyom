@@ -5,9 +5,9 @@
 <?php
     if (isset($_POST['submit'])){
         $username = $_POST['username'];
-        $email = $_POST['email'];
+        $no_hp = $_POST['no_handphone'];
 
-        $query="SELECT * FROM pengguna WHERE username = '$username' AND email = '$email'";
+        $query="SELECT * FROM user WHERE username = '$username' AND no_hp = '$no_hp'";
         $result = mysqli_num_rows(mysqli_query($conn, $query));
 
         if($result > 0){
@@ -16,7 +16,7 @@
 <!-- Form untuk mengirimkan variable username dan no_hp ke file reset_password.php dan juga redirect ke reset_password.php -->
 <form id="sendvar" action="reset_password.php" method="POST">
     <input type="hidden" name='username' id='username' value="<?php echo $username;?>">
-    <input type="hidden" name='email' id='email' value="<?php echo $email;?>">
+    <input type="hidden" name='no_hp' id='no_hp' value="<?php echo $no_hp;?>">
   </form>
   <script type="text/javascript">
   document.getElementById("sendvar").submit();
