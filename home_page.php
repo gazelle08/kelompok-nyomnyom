@@ -72,6 +72,13 @@ session_start()
 			top: 20px;
 			border: none;
 		}
+		#button:hover {
+			color: #E05B36;
+			background-color: #FFFFFF;
+			outline: 3px solid #E05B36;
+			outline-offset: -3px;
+			cursor: pointer;
+		}
 	</style>
 </head>
 <body>
