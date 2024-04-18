@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.629" height="26.157" viewBox="0 0 25.629 26.157">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #e05b36;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #e05b36;
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="logout" transform="translate(-1323 -25.5)">
+    <g id="Rectangle_191" data-name="Rectangle 191" class="cls-1" transform="translate(1323 25.5)">
+      <rect class="cls-5" width="17.694" height="26.157" rx="3"/>
+      <rect class="cls-6" x="1" y="1" width="15.694" height="24.157" rx="2"/>
+    </g>
+    <rect id="Rectangle_192" data-name="Rectangle 192" class="cls-2" width="6.924" height="14.617" transform="translate(1336.078 30.885)"/>
+    <g id="Group_262" data-name="Group 262" transform="translate(1332.759 32.945)">
+      <path id="Path_1719" data-name="Path 1719" class="cls-3" d="M3.249,0,6.5,5.539H0Z" transform="translate(7.472 3.249) rotate(-30)"/>
+      <g id="Rectangle_193" data-name="Rectangle 193" class="cls-4" transform="translate(0 4.023)">
+        <rect class="cls-5" width="13.265" height="1.708" rx="0.854"/>
+        <rect class="cls-6" x="0.5" y="0.5" width="12.265" height="0.708" rx="0.354"/>
+      </g>
+    </g>
+  </g>
+</svg>

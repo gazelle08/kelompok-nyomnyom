@@ -177,7 +177,7 @@
 		Untuk tahu letak paddingnya, bisa dicek di halamannya langsung dengan klik kanan dan pilih inspect lalu cursornya diletakkan di line yg ingin dilihat
 		Padding berwarna hijau dan Margin berwarna oranye*/
 		#page-content{
-			background-color: #DE0D4F;
+			background-color: #FAFAFA;
 			height: 100%;
 			margin: 0;
 			padding: 0 0 0 32px;

@@ -128,7 +128,7 @@ include 'config.php';
 			font-size: 37px;
 			font-family: montserrat medium;
 			display: inline-block;
-			color: #DE0D4F;
+			color: #FFF6F6;
 		}
 
 	</style>
@@ -144,7 +144,7 @@ include 'config.php';
 			<div class="row">
 				<div id="pesanan-user">
 					<p style="display: inline; font-family: Montserrat medium; margin: 0;">Pesanan </p>
-					<p style="color: #DE0D4F; display: inline; font-family: montserrat semibold; margin: 0;"><?php echo $_SESSION['username'];?></p>
+					<p style="color: black; display: inline; font-family: montserrat semibold; margin: 0;"><?php echo $_SESSION['username'];?></p>
 				</div>
 			</div>
 
