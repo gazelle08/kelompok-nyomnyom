@@ -3,11 +3,13 @@ $user 		= "root";
 $server 	= "localhost";
 $password 	= "";
 $db			= "styleme1";
-$conn 	= mysqli_connect($server, $user, $password, $db);
-$_SESSION = "username";
+$conn 		= mysqli_connect($server, $user, $password, $db);
 
-if($conn == false)
-{
+// Periksa koneksi
+if($conn === false) {
 	echo "Tidak Terkoneksi";
+}
+
+if(!isset($_SESSION['username'])) {
 }
 ?>
