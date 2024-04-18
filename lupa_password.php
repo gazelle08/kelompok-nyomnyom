@@ -271,8 +271,8 @@
 
 					<!-- No.Handphone -->
 					<div style="position: absolute; top: 81px; padding-left: 41px;">
-						<label style="color: #7F7F7F;">Email</label>
-						<input type="text" name='email' required>
+						<label style="color: #7F7F7F;">Nomor HP</label>
+						<input type="text" name='no_hp' required>
 					</div>
 					
 					<div class="col12" style="position: relative; top: 131px; vertical-align: middle;">

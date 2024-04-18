@@ -29,7 +29,7 @@ if($foto != "") {
     move_uploaded_file($file_tmp, 'images/'.$new_foto); //Moves the file img into designated folder
       // Run an INSERT query to add data into database. Make sure it is in order 
       //(id will not be necessary as it will be automatically produced)
-      $query = "UPDATE produk SET produk = '$produk', stok = '$stok', harga = '$harga', deskripsi = '$deskripsi', foto = '$new_foto'";
+      $query = "UPDATE data_product SET data_product = '$produk', stok = '$stok', harga = '$harga', deskripsi = '$deskripsi', foto = '$new_foto'";
       $query .= "WHERE id = '$id'";
       $result = mysqli_query($conn, $query);
 

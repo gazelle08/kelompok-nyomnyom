@@ -1,5 +1,6 @@
 <?php
-include 'config.php';
+// Untuk mengakses database
+require('config.php');
 
 //memasukkan data kedalam database untuk dimasukkan ke dalam summary di homepage
 $username = $_SESSION['username']; //username dari session
@@ -11,7 +12,7 @@ $pesanan_baru_result = mysqli_query($conn, $pesanan_baru_query);
 $pesanan_baru = mysqli_num_rows($pesanan_baru_result);
 
 //jumlah pesanan baru dari db user
-$pesanan_baru_user_query = "SELECT * FROM pengguna WHERE username = '$username'";
+$pesanan_baru_user_query = "SELECT * FROM user WHERE username = '$username'";
 $pesanan_baru_user_result = mysqli_query($conn, $pesanan_baru_user_query);
 $pesanan_baru_user = mysqli_fetch_assoc($pesanan_baru_user_result);
 $pesanan_baru_user = $pesanan_baru_user['pesanan_baru'];
@@ -33,13 +34,13 @@ $pesanan_siapkirim_result = mysqli_query($conn, $pesanan_siapkirim_query);
 $pesanan_siapkirim = mysqli_num_rows($pesanan_siapkirim_result);
 
 //jumlah pesanan siap kirim dari db user
-$pesanan_siapkirim_user_query = "SELECT * FROM pengguna WHERE username = '$username'";
+$pesanan_siapkirim_user_query = "SELECT * FROM user WHERE username = '$username'";
 $pesanan_siapkirim_user_result = mysqli_query($conn, $pesanan_siapkirim_user_query);
 $pesanan_siapkirim_user = mysqli_fetch_assoc($pesanan_siapkirim_user_result);
 $pesanan_siapkirim_user = $pesanan_siapkirim_user['pesanan_siapkirim'];
 
 if ($pesanan_siapkirim != $pesanan_siapkirim_user) {
-    $update_pesanan_siapkirim_query = "UPDATE pengguna SET pesanan_siapkirim = '$pesanan_siapkirim' WHERE username = '$username'";
+    $update_pesanan_siapkirim_query = "UPDATE user SET pesanan_siapkirim = '$pesanan_siapkirim' WHERE username = '$username'";
     $update_pesanan_siapkirim_result = mysqli_query($conn, $update_pesanan_siapkirim_query);
     if ($update_pesanan_siapkirim_result){
         ;
@@ -55,7 +56,7 @@ $pesanan_selesai_result = mysqli_query($conn, $pesanan_selesai_query);
 $pesanan_selesai = mysqli_num_rows($pesanan_selesai_result);
 
 //jumlah pesanan selesai dari db user
-$pesanan_selesai_user_query = "SELECT * FROM pengguna WHERE username = '$username'";
+$pesanan_selesai_user_query = "SELECT * FROM user WHERE username = '$username'";
 $pesanan_selesai_user_result = mysqli_query($conn, $pesanan_selesai_user_query);
 $pesanan_selesai_user = mysqli_fetch_assoc($pesanan_selesai_user_result);
 $pesanan_selesai_user = $pesanan_selesai_user['pesanan_selesai'];

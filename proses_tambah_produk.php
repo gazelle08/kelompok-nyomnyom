@@ -25,7 +25,7 @@ if($foto != "") {
     move_uploaded_file($file_tmp, 'images/'.$new_foto); //Moves the file img into designated folder
       // Run an INSERT query to add data into database. Make sure it is in order 
       //(id will not be necessary as it will be automatically produced)
-      $query = "INSERT INTO produk (produk, stok, harga, deskripsi, foto) VALUES ('$produk', '$stok', '$harga', '$deskripsi', '$new_foto')";
+      $query = "INSERT INTO data_product (produk, stok, harga, deskripsi, foto) VALUES ('$produk', '$stok', '$harga', '$deskripsi', '$new_foto')";
       $result = mysqli_query($conn, $query);
 
       // Check query for error
@@ -46,7 +46,7 @@ if($foto != "") {
   }
   
 } else { // If img is not added, then this will happen:
-  $query = "INSERT INTO produk (produk, stok, harga, deskripsi, foto) VALUES ('$produk', '$stok', '$harga', '$deskripsi', null)";
+  $query = "INSERT INTO data_product (produk, stok, harga, deskripsi, foto) VALUES ('$produk', '$stok', '$harga', '$deskripsi', null)";
   $result = mysqli_query($conn, $query);
   // Check query for error
   if(!$result){

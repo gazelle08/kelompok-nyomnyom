@@ -275,7 +275,7 @@ include 'config.php';
 				<form action="reset_password_check.php" method="POST">
 					<!-- Untuk mengirimkan username dan email ke reset_password_check.php -->
 					<input type="hidden" name='username' value="<?php echo $_POST['username'];?>">
-					<input type="hidden" name='email' value="<?php echo $_POST['email'];?>">
+					<input type="hidden" name='no_hp' value="<?php echo $_POST['no_hp'];?>">
 
 					<!-- Password -->
 					<div style="position: relative; top: 0; padding-left: 41px;">
