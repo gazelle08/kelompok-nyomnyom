@@ -93,7 +93,7 @@ include 'config.php';
 				<div class="col12" style="position: absolute; top: 0; text-align: left;">
 					<div id="table-box">
 						<?php
-						require 'koneksi.php';
+						require 'config.php';
 						$per_page_record = 5;
 						if (isset($_GET["page"])) {
 				            $page  = $_GET["page"];    

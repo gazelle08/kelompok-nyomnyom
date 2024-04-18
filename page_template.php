@@ -202,6 +202,11 @@
                 }
           ?>" href="pesanan.php">Pesanan</a>
 		<a class="<?php 
+                if($this_page=='ulasan'){
+                     echo 'active';
+                }
+          ?>" href="ulasan.php">Ulasan Pelanggan</a>		
+		<a class="<?php 
                 if($this_page=='pelaporan'){
                      echo 'active';
                 }
