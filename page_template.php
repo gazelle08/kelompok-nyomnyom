@@ -205,7 +205,7 @@
                 if($this_page=='pelaporan'){
                      echo 'active';
                 }
-          ?>" href="laporan-pelanggan.php">Pelaporan</a>
+          ?>" href="pelaporan.php">Pelaporan</a>
 
 		<!-- Footer -->
 		<footer>

@@ -1,6 +1,6 @@
 <!-- Autentikasi -->
-<?php require('../config.php');
-    if(is_logged_in()){
+<?php require('config.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -178,7 +178,7 @@
 <body>
 	<?php $this_page='pelaporan'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php require("../page_template.php"); ?>
+	<?php require("page_template.php"); ?>
 
 		<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content"> <!-- Intinya style dari id="page-content" tapi tanpa padding -->
@@ -193,7 +193,7 @@
 						<p style="position: relative; top: 30px; left: 5px; margin: 0; padding: 0; font-family: montserrat medium; font-size: 20px;">Kenapa pelanggan ini bermasalah?</p>
 						<hr style='width: 867px; position: absolute; border-radius: 5px; height: 2px; top: 65px; left: 25px; background-color: black; padding: 0; margin: 0; border: none;'>
 						<?php
-							require 'koneksi.php';
+							require 'config.php';
 							if(isset($_GET['pelanggan'])){
 						        $pelanggan =$_GET['pelanggan'];
 						    }
@@ -266,8 +266,3 @@
 	</div> <!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
 </body>
 </html>
-
-<!-- Autentikasi -->
-<?php  } else {
-    header('Location: ../index.php');
-}

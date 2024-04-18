@@ -1,7 +1,6 @@
 <!-- Autentikasi -->
 <?php
-	require('../config.php');
-    if(is_logged_in()){
+	require('config.php');
 ?>
 
 <!DOCTYPE html>
@@ -97,7 +96,7 @@
 <body>
 	<?php $this_page='pelaporan'; ?> <!-- Ini nama pagenya supaya bisa active di navbar -->
 	<!-- Untuk sidebar, header dan content disambung mulai dari sini. -->
-	<?php require("../page_template.php"); ?>
+	<?php require("page_template.php"); ?>
 
 		<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content"> <!-- Intinya style dari id="page-content" tapi tanpa padding -->
@@ -110,7 +109,7 @@
 				<div class="col12" style="position: absolute; top: 0; text-align: left;">
 					<div id="table-box">
 						<?php
-						require 'koneksi.php';
+						require 'config.php';
 						$per_page_record = 5;
 						if (isset($_GET["page"])) {
 				            $page  = $_GET["page"];    
@@ -193,9 +192,3 @@
 	</div> <!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
 </body>
 </html>
-
-<!-- Autentikasi -->
-<?php
-} else {
-    header('Location: ../index.php');
-}
