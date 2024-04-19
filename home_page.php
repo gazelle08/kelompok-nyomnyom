@@ -148,30 +148,38 @@ session_start()
 			$row = mysqli_fetch_assoc($result);
 			?>
 			<div class="row">
-				<div class="col1" id="icon">
-					<p style="color: #FF7A57; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['pesanan_baru'];?></p>
-					<p style="font-size: 16px; position: relative; top: 5px;">Pesanan<br>Baru</p>
+
+				<div class="row" style="margin-top: 40px">
+					<div class="col12" id="icons-container" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+
+						<div class="col1" id="icon">
+							<p style="color: #FF7A57; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['pesanan_baru'];?></p>
+							<p style="font-size: 16px; position: relative; top: 5px;">Pesanan<br>Baru</p>
+						</div>
+						<div class="col1" id="icon">
+							<p style="color: #E09240; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['pesanan_siapkirim'];?></p>
+							<p style="font-size: 16px; position: relative; top: 5px;">Pesanan<br>Siap Kirim</p>
+						</div>
+						<div class="col1" id="icon">
+							<p style="color: #E0481F; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['pesanan_selesai'];?></p>
+							<p style="font-size: 16px; position: relative; top: 5px;">Pesanan<br>Selesai</p>
+						</div>
+						<div class="col1" id="icon">
+							<p style="color: #E0481F; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['ulasan_baru'];?></p>
+							<p style="font-size: 16px; position: relative; top: 5px;">Ulasan<br>Baru</p>
+						</div>
+						<div class="col1" id="icon">
+							<p style="color: #E09240; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['produk_terjual'];?></p>
+							<p style="font-size: 16px; position: relative; top: 5px;">Produk<br>Terjual</p>
+						</div>
+						<div class="col1" id="icon">
+							<p style="color: #FF7A57; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['jumlah_pelanggan'];?></p>
+							<p style="font-size: 16px; position: relative; top: 5px;">Jumlah<br>Pelanggan</p>
+						</div>
+
+					</div>
 				</div>
-				<div class="col1" id="icon">
-					<p style="color: #E09240; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['pesanan_siapkirim'];?></p>
-					<p style="font-size: 16px; position: relative; top: 5px;">Pesanan<br>Siap Kirim</p>
-				</div>
-				<div class="col1" id="icon">
-					<p style="color: #E0481F; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['pesanan_selesai'];?></p>
-					<p style="font-size: 16px; position: relative; top: 5px;">Pesanan<br>Selesai</p>
-				</div>
-				<div class="col1" id="icon">
-					<p style="color: #E0481F; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['ulasan_baru'];?></p>
-					<p style="font-size: 16px; position: relative; top: 5px;">Ulasan<br>Baru</p>
-				</div>
-				<div class="col1" id="icon">
-					<p style="color: #E09240; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['produk_terjual'];?></p>
-					<p style="font-size: 16px; position: relative; top: 5px;">Produk<br>Terjual</p>
-				</div>
-				<div class="col1" id="icon">
-					<p style="color: #FF7A57; font-size: 48.83px; position: relative; top: 19px; margin: 0;"><?php echo $row['jumlah_pelanggan'];?></p>
-					<p style="font-size: 16px; position: relative; top: 5px;">Jumlah<br>Pelanggan</p>
-				</div>
+
 			</div>
 
 			<!-- Ad -->
