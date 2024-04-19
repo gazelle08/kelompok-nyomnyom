@@ -149,7 +149,7 @@ session_start()
 			?>
 			<div class="row">
 
-				<div class="row" style="margin-top: 40px">
+				<div class="row" style="margin-top: 40px; margin-right: 80px">
 					<div class="col12" id="icons-container" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
 
 						<div class="col1" id="icon">
@@ -183,7 +183,7 @@ session_start()
 			</div>
 
 			<!-- Ad -->
-			<div class="row" style="position: relative; top: 71px;">
+			<div class="row" style="position: relative; top: 31px;">
 				<div class="col12">
 				</div>
 				<!-- Ad icons -->
