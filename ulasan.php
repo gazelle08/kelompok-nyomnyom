@@ -89,7 +89,7 @@ include 'config.php';
 		<div class="col12" id="page-content"> <!-- Intinya style dari id="page-content" tapi tanpa padding -->
 			<div class="row">
 				<div id="ulasan-user">
-					<p style="display: inline; font-family: montserrat medium; margin: 0;">Ulasan </p><p style="color: #E05B36; display: inline; margin: 0;"><?php echo $_SESSION['username'];?></p>
+					<p style="display: inline; font-family: montserrat medium; margin: 0;">Ulasan </p><p style="color: #DE0D4F; display: inline; margin: 0;"><?php echo $_SESSION['username'];?></p>
 				</div>
 				<div class="col12" style="position: absolute; top: 0; text-align: left;">
 					<div id="table-box">

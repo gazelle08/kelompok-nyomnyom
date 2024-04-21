@@ -103,7 +103,7 @@
 		<div class="col12" id="page-content"> <!-- Intinya style dari id="page-content" tapi tanpa padding -->
 			<div class="row">
 				<div id="pelaporan-user">
-					<p style="display: inline; font-family: montserrat medium; margin: 0;">Pelaporan </p><p style="color: #E05B36; display: inline; margin: 0;"><?php echo $_SESSION['username'];?></p>
+					<p style="display: inline; font-family: montserrat medium; margin: 0;">Pelaporan </p><p style="color: #DE0D4F; display: inline; margin: 0;"><?php echo $_SESSION['username'];?></p>
 				</div>
 
 				<!-- Tabel -->
