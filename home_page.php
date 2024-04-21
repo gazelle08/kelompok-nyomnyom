@@ -62,7 +62,7 @@ session_start()
 			top: 10px;
 		}
 		#button{
-			background-color: #E05B36;
+			background-color: #DE0D4F;
 			color: white;
 			font-family: montserrat semibold;
 			font-size: 16px;
@@ -73,9 +73,9 @@ session_start()
 			border: none;
 		}
 		#button:hover {
-			color: #E05B36;
+			color: #DE0D4F;
 			background-color: #FFFFFF;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}

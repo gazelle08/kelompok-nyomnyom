@@ -70,7 +70,7 @@ include 'config.php';
 		/* Untuk tombol ubah dan hapus produk */
 		#ubah{
 			font-size: 20px;
-			color: #E05B36;
+			color: #FBB4C6;
 			font-family: montserrat semibold;
 			text-decoration: none;
 			transition: 0.3s;
@@ -82,7 +82,7 @@ include 'config.php';
 		
 		#hapus{
 			font-size: 20px;
-			color: #1D3794;
+			color: red;
 			font-family: montserrat semibold;
 			text-decoration: none;
 			transition: 0.3s;
@@ -93,7 +93,7 @@ include 'config.php';
 		}
 		
 		#button-tambah{
-			background-color: #E05B36;
+			background-color: #DE0D4F;
 			color: white;
 			font-family: montserrat semibold;
 			text-decoration: none;
@@ -108,9 +108,9 @@ include 'config.php';
 
 		#button-tambah:hover {
 			background-color: #FFFFFF;
-			color: #E05B36;
+			color: #DE0D4F;
 			text-align: center;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}
