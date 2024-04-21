@@ -140,7 +140,7 @@ include 'config.php';
 			font-family: montserrat semibold;
 			cursor: pointer;
 			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
-			background-color: #E09240;
+			background-color: #DE0D4F;
 			transition: 0.3s;
 			display: inline-block;
 			vertical-align: middle;
@@ -148,12 +148,12 @@ include 'config.php';
 
 		input[type=submit]:hover {
 			background-color:white;
-			color: #E09240;
-			border: 3px solid #E09240;
+			color: #DE0D4F;
+			border: 3px solid #DE0D4F;
 		}
 
         #link-kembali{
-			color: #E09240;
+			color: #DE0D4F;
 			font-family: montserrat semibold;
 			font-size: 20px;
 			height: 54px;

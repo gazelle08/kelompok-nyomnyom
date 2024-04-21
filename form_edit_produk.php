@@ -122,7 +122,7 @@ include 'config.php';
 			border: none;
 			padding: 5px 10px;
 			border-radius: 30px;
-			background-color: #E09240;
+			background-color: #DE0D4F;
 			transition: 0.3s;
 			/* Untuk tulisan dalam button */
 			font-size: 16px;
@@ -132,8 +132,8 @@ include 'config.php';
 
 		input[type=file]::file-selector-button:hover {
 			background-color: white;
-			color: #E09240;
-			outline: 2px solid #E09240;
+			color: #DE0D4F;
+			outline: 2px solid #DE0D4F;
 			outline-offset: -2px;
 		}
 		
