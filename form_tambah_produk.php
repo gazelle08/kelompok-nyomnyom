@@ -102,7 +102,7 @@ session_start();
 			border: none;
 			padding: 5px 10px;
 			border-radius: 30px;
-			background-color: #E09240;
+			background-color: #DE0D4F;
 			transition: 0.3s;
 			/* Untuk tulisan dalam button */
 			font-size: 16px;
@@ -112,14 +112,14 @@ session_start();
 
 		input[type=file]::file-selector-button:hover {
 			background-color: white;
-			color: #E09240;
-			outline: 2px solid #E09240;
+			color: #DE0D4F;
+			outline: 2px solid #DE0D4F;
 			outline-offset: -2px;
 		}
 		
 		/* Tombol Tambah Produk */
 		#button-submit{
-			background-color: #E05B36;
+			background-color: #DE0D4F;
 			color: white;
 			font-family: montserrat semibold;
 			font-size: 20px;
@@ -135,7 +135,7 @@ session_start();
 		#button-submit:hover {
 			color: #E05B36;
 			background-color: #FFFFFF;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}
@@ -214,7 +214,7 @@ session_start();
 			<div class="row">
 				<div id="produk-user">
 					<p style="display: inline; font-family: Montserrat medium;">Tambah Produk</p>
-					<p style="color: #E05B36; display: inline;"><?php echo $_SESSION['username'];?></p>
+					<p style="color: #DE0D4F; display: inline;"><?php echo $_SESSION['username'];?></p>
 				</div>
 			</div>
 
