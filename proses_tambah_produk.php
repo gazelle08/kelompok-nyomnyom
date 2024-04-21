@@ -1,5 +1,6 @@
 <!-- Connect to database -->
 <?php
+session_start();
 include 'config.php';
 // # Code 1
 // Create variable as vessel for the data from form

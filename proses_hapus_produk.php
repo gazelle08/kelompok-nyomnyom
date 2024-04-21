@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'config.php';
 //Untuk mengambil nomor halaman yang dikirim
 $page = $_GET['page'];
@@ -28,6 +29,6 @@ if(!$hasil_query) {
     " - ".mysqli_error($conn));
 } else {
   // echo "<script>alert('Data berhasil dihapus.');window.location='produk_page.php';</script>";
-  header('Location: produk_page.php?page='.$page.'#iya-batal');
+  header('Location: produk_page.php='.$page.'#iya-batal');
 }
 ?>
