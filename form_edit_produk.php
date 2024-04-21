@@ -1,5 +1,6 @@
 <!-- Autentikasi -->
 <?php
+session_start();
 include 'config.php';
   // Check if url has value 'id' using GET method
   if (isset($_GET['id'])) {
@@ -252,7 +253,7 @@ include 'config.php';
 			<div class="row">
 				<div id="produk-user">
 					<p style="display: inline; font-family: Montserrat medium;">Ubah Produk</p>
-					<p style="color: #E05B36; display: inline;"><?php echo $_SESSION['username'];?></p>
+					<p style="color: #DE0D4F; display: inline;"><?php echo $_SESSION['username'];?></p>
 				</div>
 			</div>
 
