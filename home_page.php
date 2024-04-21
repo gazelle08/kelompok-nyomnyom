@@ -54,7 +54,7 @@ session_start()
 		/*CSS for ads*/
 		#ad-icon{
 			width: 390px;
-			height: 160px;
+			height: 280px;
 			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
 			border-radius: 30px;
 			background-color: white;
