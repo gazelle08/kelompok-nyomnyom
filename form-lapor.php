@@ -218,7 +218,7 @@ session_start();
 							</tr>
 							<tr>
 								<th>Rating</td>
-								<td style='color: #E0D74C;'><img src=../star.svg style='margin: 0 5px 0 0; position: relative; top: 3px;'><?php echo $hasil['rating']?></td>
+								<td style='color: #E0D74C;'><img src=star.svg style='margin: 0 5px 0 0; position: relative; top: 3px;'><?php echo $hasil['rating']?></td>
 							</tr>
 							<tr>
 								<th>Komentar</td>
@@ -256,7 +256,7 @@ session_start();
 				<!-- Pop-up sudah terkonfirmasi -->
 				<div id="kirim-lapor" class="konfirmasi">
 					<div class="konfirmasi-lapor" id="berhasil">
-						<img src=../confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
+						<img src=confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
 						<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Laporan anda sudah terkirim!</p>
 						<button class="button-ok" onclick="location.href='pelaporan.php'">OK</button>
 					</div>
