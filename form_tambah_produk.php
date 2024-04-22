@@ -178,6 +178,14 @@ session_start();
 			left: 50%;
 			top: 30%;
 		}
+		#berhasil img {
+    		width: 150px; /* Sesuaikan lebar yang diinginkan */
+    		height: 180px; /* Sesuaikan tinggi yang diinginkan */
+    		margin: 0 auto; /* Menengahkan gambar */
+    		display: block; /* Membuat gambar menjadi elemen blok agar dapat diatur margin secara otomatis */
+		}
+
+
 		
 		.button-ok{
 			padding: 10px 20px;
@@ -200,6 +208,7 @@ session_start();
 			outline-offset: -3px;
 			cursor: pointer;
 		}
+
 
 	</style>
 </head>
@@ -277,7 +286,7 @@ session_start();
 				<!-- Pop-up sudah terkonfirmasi -->
 				<div id="konfirmasi" class="konfirmasi">
 					<div class="konfirmasi-lapor" id="berhasil">
-						<img src=confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
+						<img src=confirmpic.svg >
 						<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Produk anda sudah ditambah!</p>
 						<button class="button-ok" onclick="location.href='produk_page.php'">OK</button>
 					</div>
