@@ -2,13 +2,11 @@
 <?php
 session_start();
 include 'config.php';
-  // Check if url has value 'id' using GET method
   if (isset($_GET['id'])) {
-    // Takes the value of 'id' and store it in $id
     $id = ($_GET["id"]);
 
     // Displays data from database based on id
-    $query = "SELECT * FROM produk WHERE id='$id'";
+    $query = "SELECT * FROM data_product WHERE id='$id'";
     $result = mysqli_query($conn, $query);
     // If data couldn't be shown, then this error will occur:
     if(!$result){
