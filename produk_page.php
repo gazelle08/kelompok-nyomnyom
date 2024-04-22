@@ -273,7 +273,7 @@ include 'config.php';
 							<th style='width: 115px;'>Stok (Pcs)</th>
 							<th style="width: 122px;">Harga</th>
 							<th style='width: 170px;'>Deskripsi</th>
-							<th style='width: 175px; padding-top: 40px;' colspan='2'><button id='button-tambah' onclick="location.href='form_tambah_produk.php'">Tambah</button></th>
+							<th style='width: 175px; padding-top: 40px;' colspan='2'><button id='button-tambah' onclick="location.href='form_tambah_produk.php'">Tambah +</button></th>
 						</tr>
 						<hr style='width: 908px; position: absolute; border-radius: 5px; border: none; height: 2px; top: 79px; left: 25px; background-color: black; margin: 0; padding: 0;'>
 					  	<!--output data of each row -->
