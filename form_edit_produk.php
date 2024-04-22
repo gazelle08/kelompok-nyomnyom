@@ -339,7 +339,7 @@ include 'config.php';
 				<!-- Pop-up sudah terkonfirmasi -->
 				<div id="konfirmasi" class="konfirmasi">
 					<div class="konfirmasi-edit" id="berhasil">
-						<img src=confirmpic.svg style='margin: 0 0 0 0; position: relative; top: 10.5px;'>
+						<img src="confirmpic.svg">
 						<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Produk anda sudah diubah!</p>
 						<button class="button-ok" onclick="location.href='produk_page.php?page=<?php echo $page;?>'">OK</button>
 					</div>
