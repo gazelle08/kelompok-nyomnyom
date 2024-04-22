@@ -102,6 +102,16 @@ include 'config.php';
 			font-size: 16px;
 			font-family: montserrat;
 		}
+		#currency{
+			border-radius: 20px;
+			width: 231px;
+			height: 33px;
+			border: 1px solid #BBBBBB;
+			padding: 0 10px;
+			text-align: left;
+			font-size: 16px;
+			font-family: montserrat;
+		}
 
 		#form-input-desc{
 			border-radius: 20px;
@@ -301,7 +311,7 @@ include 'config.php';
 							<!-- Harga -->
 							<tr>
 								<th>Harga</th>
-								<td><input id="form-input" type="text" name = "harga" value="<?php echo $data['harga'];?>"></td>
+								<td><input id="currency" type="text" name = "harga" value="<?php echo $data['harga'];?>"></td>
 							</tr>
 
 							<!-- Deskripsi Produk -->
@@ -336,6 +346,15 @@ include 'config.php';
 				</div>
 			</div>
 		</div> <!-- Tutup div class:"col12" id="page-content" -->
-	</div> <!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
+	</div> 
+	<script>
+  $(function() {
+    $('#currency').maskMoney({
+      thousands: '.',
+      decimal: ',',
+      precision: 0
+    });
+  })
+</script><!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
 </body>
 </html>

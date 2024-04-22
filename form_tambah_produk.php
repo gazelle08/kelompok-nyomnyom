@@ -10,10 +10,13 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+  <script src="jquery.maskMoney.js" type="text/javascript"></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Form Tambah Produk</title>
 	<style type="text/css">
+		
 		#produk-user{
 			color: black;
 			position: relative;
@@ -74,6 +77,16 @@ session_start();
 		}
 		
 		#form-input{
+			border-radius: 20px;
+			width: 231px;
+			height: 33px;
+			border: 1px solid #BBBBBB;
+			padding: 0 10px;
+			text-align: left;
+			font-size: 16px;
+			font-family: montserrat;
+		}
+		#currency{
 			border-radius: 20px;
 			width: 231px;
 			height: 33px;
@@ -220,80 +233,88 @@ session_start();
 	<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content">
 			<!-- Halo User! -->
-			<div class="row">
-				<div id="produk-user">
-					<p style="display: inline; font-family: Montserrat medium;">Tambah Produk</p>
-					<p style="color: #DE0D4F; display: inline;"><?php echo $_SESSION['username'];?></p>
+			<!-- Halo User! -->
+		<div class="row">
+			<div id="produk-user">
+				<p style="display: inline; font-family: Montserrat medium;">Tambah Produk</p>
+				<p style="color: #DE0D4F; display: inline;"><?php echo $_SESSION['username'];?></p>
+			</div>
+		</div>
+
+		<!-- Container -->
+		<div class="col12" style="position: absolute; top: 0; text-align: left;">
+			<!-- Form -->
+			<div id="form">
+				<p style="position: relative; top: 0; left: 5px; margin: 0; padding: 0; font-family: montserrat medium; font-size: 20px;">Mohon masukkan data untuk produk baru</p>
+				<hr style='width: 867px; position: absolute; border-radius: 5px; height: 2px; top: 65px; left: 25px; background-color: black; padding: 0; margin: 0; border: none;'>
+
+				<!-- Form Tambah -->
+				<form action="proses_tambah_produk.php" method="POST" enctype="multipart/form-data">
+					<table>
+						<!-- Upload Foto -->
+						<tr>
+							<th>Foto</th>
+							<td><input type="file" name = "foto" required></td>
+						</tr>
+
+						<!-- Tempat kosong -->
+						<tr style="height: 18px;"></tr>
+
+						<!-- Nama Produk -->
+						<tr>
+							<th>Produk</th>
+							<td><input id="form-input" type="text" name="produk" required></td>
+						</tr>
+
+						<!-- Stok Produk -->
+						<tr>
+							<th>Stok (pcs)</th>
+							<td><input id="form-input" type="number" name="stok" required></td>
+						</tr>
+
+						<!-- Harga -->
+						<tr>
+							<th>Harga</th>
+							<td><input id="currency" type="text" name="harga" required></td>
+						</tr>
+
+						<!-- Deskripsi Produk -->
+						<tr>
+							<th>Deskripsi</th>
+							<td style="padding-top: 8px;"><textarea rows="4" cols="50" id="form-input-desc" name="deskripsi"></textarea></td>
+						</tr>
+					</table>
+
+					<!-- Garis tengah -->
+					<div class="line"></div>
+
+					<!-- Button Tambah Produk-->
+					<input id="button-submit" type="submit" value="Tambah Produk">
+				</form>	
+				<!-- End of form -->
+			</div>
+		</div>
+		
+		<!-- Pop-up -->
+		<div class="col12">
+			<!-- Pop-up sudah terkonfirmasi -->
+			<div id="konfirmasi" class="konfirmasi">
+				<div class="konfirmasi-lapor" id="berhasil">
+					<img src="confirmpic.svg">
+					<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Produk anda sudah ditambah!</p>
+					<button class="button-ok" onclick="location.href='produk_page.php'">OK</button>
 				</div>
 			</div>
-
-			<!-- Container -->
-			<div class="col12" style="position: absolute; top: 0; text-align: left;">
-				<!-- Form -->
-				<div id="form">
-					<p style="position: relative; top: 0; left: 5px; margin: 0; padding: 0; font-family: montserrat medium; font-size: 20px;">Mohon masukkan data untuk produk baru</p>
-					<hr style='width: 867px; position: absolute; border-radius: 5px; height: 2px; top: 65px; left: 25px; background-color: black; padding: 0; margin: 0; border: none;'>
-
-					<!-- Form Tambah -->
-					<form action="proses_tambah_produk.php" method="POST" enctype="multipart/form-data">
-						<table>
-							<!-- Upload Foto -->
-							<tr>
-								<th>Foto</th>
-								<td><input type="file" name = "foto" required></td>
-							</tr>
-
-							<!-- Tempat kosong -->
-							<tr style="height: 18px;"></tr>
-
-							<!-- Nama Produk -->
-							<tr>
-								<th>Produk</th>
-								<td><input id="form-input" type="text" name = "produk" required></td>
-							</tr>
-
-							<!-- Stok Produk -->
-							<tr>
-								<th>Stok (pcs)</th>
-								<td><input id="form-input" type="number" name = "stok" required></td>
-							</tr>
-
-							<!-- Harga -->
-							<tr>
-								<th>Harga</th>
-								<td><input id="form-input" type="text" name = "harga" required></td>
-							</tr>
-
-							<!-- Deskripsi Produk -->
-							<tr>
-								<th>Deskripsi</th>
-								<td style="padding-top: 8px;"><textarea rows="4" cols="50" id="form-input-desc" name="deskripsi"></textarea></td>
-							</tr>
-						</table>
-
-						<!-- Garis tengah -->
-						<div class="line"></div>
-
-						<!-- Button Tambah Produk-->
-						<input id="button-submit" type="submit" value="Tambah Produk">
-					</form>	
-					<!-- End of form -->
-				</div>
-			</div>
-			
-			<!-- Pop-up -->
-			<div class="col12">
-				<!-- Pop-up sudah terkonfirmasi -->
-				<div id="konfirmasi" class="konfirmasi">
-					<div class="konfirmasi-lapor" id="berhasil">
-						<img src=confirmpic.svg >
-						<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Produk anda sudah ditambah!</p>
-						<button class="button-ok" onclick="location.href='produk_page.php'">OK</button>
-					</div>
-				</div>
-			</div>
-		</div> <!-- Tutup div class:"col12" id="page-content" -->
-	</div> <!-- Ini tutupnya div class:"content" sambungan dari page_template.php dan JANGAN DIHAPUS -->
-
+		</div>
+	</div> <!-- Tutup div class:"col12" id="page-content" -->
 </body>
+<script>
+  $(function() {
+    $('#currency').maskMoney({
+      thousands: '.',
+      decimal: ',',
+      precision: 0
+    });
+  })
+</script>
 </html>
