@@ -1,6 +1,6 @@
 <!-- Autentikasi -->
 <?php require('config.php');
-
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -78,29 +78,29 @@
 
 		/* Button */
 		button{
-			background-color: #E05B36;
+			background-color: #DE0D4F;
 			border: none;
 			color: white;
 			transition: 0.3s;
 		}
 		button:hover{
 			background-color: #FFFFFF;
-			color: #E05B36;
+			color: #DE0D4F;
 			text-align: center;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}
 		.button-lapor{
 			padding: 10px 20px;
-			background-color: #E05B36; 
+			background-color: #DE0D4F; 
 			border-radius: 30px;
 			display: inline-block;
 			font-size: 20px;
 			font-family: montserrat semibold;
 		}
 		.link-batal{
-			color: #E05B36;
+			color: #DE0D4F;
 			font-family: montserrat semibold;
 			font-size: 20px;
 			text-decoration: none;
@@ -114,7 +114,7 @@
 
 		.button-iyakirim{
 			padding: 10px 20px;
-			background-color: #E05B36; 
+			background-color: #DE0D4F; 
 			border-radius: 30px;
 			position: relative;
 			display: inline-block;
@@ -125,7 +125,7 @@
 		}
 		.button-ok{
 			padding: 10px 20px;
-			background-color: #E05B36; 
+			background-color: #DE0D4F; 
 			border-radius: 30px;
 			position: relative;
 			display: inline-block;
@@ -184,7 +184,7 @@
 		<div class="col12" id="page-content"> <!-- Intinya style dari id="page-content" tapi tanpa padding -->
 			<div class="row">
 				<div id="pelaporan-user">
-					<p style="display: inline; font-family: montserrat medium; margin: 0;">Pelaporan </p><p style="color: #E05B36; display: inline; margin: 0;"><?php echo $_SESSION['username'];?></p>
+					<p style="display: inline; font-family: montserrat medium; margin: 0;">Pelaporan </p><p style="color: #DE0D4F; display: inline; margin: 0;"><?php echo $_SESSION['username'];?></p>
 				</div>
 
 				<!-- Tabel -->

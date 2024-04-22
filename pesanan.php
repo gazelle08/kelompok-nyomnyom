@@ -261,7 +261,7 @@ include 'config.php';
                             ?>
 
                             <!-- nomor halaman -->
-                        <p style="font-size: 20px; font-family: montserrat medium; display: inline-block; padding: 0; margin: 0; position: relative; bottom: 26px;">Page</p> <p style="color: #E05B36; font-size: 20px; display: inline-block; padding: 0; margin: 0; font-family: montserrat medium; position: relative; bottom: 26px;"><?php echo $page; ?></p> <p style="font-size: 20px; font-family: montserrat medium; display:inline-block; padding: 0; margin: 0; position: relative; bottom: 26px;"> of <?php echo $total_pages; ?></p>
+                        <p style="font-size: 20px; font-family: montserrat medium; display: inline-block; padding: 0; margin: 0; position: relative; bottom: 26px;">Page</p> <p style="color: #DE0D4F; font-size: 20px; display: inline-block; padding: 0; margin: 0; font-family: montserrat medium; position: relative; bottom: 26px;"><?php echo $page; ?></p> <p style="font-size: 20px; font-family: montserrat medium; display:inline-block; padding: 0; margin: 0; position: relative; bottom: 26px;"> of <?php echo $total_pages; ?></p>
                         <?php
                             // ke halaman selanjutnya
                             if($page < $total_pages){

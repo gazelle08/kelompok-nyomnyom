@@ -146,7 +146,7 @@ include 'config.php';
 		}
 
 		#button-submit{
-			background-color: #E05B36;
+			background-color: #DE0D4F;
 			color: white;
 			font-family: montserrat semibold;
 			font-size: 20px;
@@ -157,15 +157,15 @@ include 'config.php';
 		}
 
 		#button-submit:hover {
-			color: #E05B36;
+			color: #DE0D4F;
 			background-color: #FFFFFF;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}
 
 		#link-batal{
-			color: #E05B36;
+			color: #DE0D4F;
 			font-family: montserrat semibold;
 			font-size: 20px;
 			margin-left: 25px;
@@ -220,7 +220,7 @@ include 'config.php';
 		
 		.button-ok{
 			padding: 10px 20px;
-			background-color: #E05B36; 
+			background-color: #DE0D4F; 
 			border-radius: 30px;
 			border: none;
 			position: relative;
@@ -233,9 +233,9 @@ include 'config.php';
 		}
 		.button-ok:hover{
 			background-color: #FFFFFF;
-			color: #E05B36;
+			color: #DE0D4F;
 			text-align: center;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}

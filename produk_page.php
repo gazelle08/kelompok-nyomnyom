@@ -128,26 +128,26 @@ include 'config.php';
 			font-size: 37px;
 			font-family: montserrat medium;
 			display: inline-block;
-			color: #E05B36;
+			color: #DE0D4F;
 		}
 
 		/*Tombol Pop-up */
 		button{
-			background-color: #E05B36;
+			background-color: #DE0D4F;
 			border: none;
 			color: white;
 			transition: 0.3s;
 		}
 		button:hover{
 			background-color: #FFFFFF;
-			color: #E05B36;
+			color: #DE0D4F;
 			text-align: center;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}
 		.link-batal{
-			color: #E05B36;
+			color: #DE0D4F;
 			font-family: montserrat semibold;
 			font-size: 20px;
 			text-decoration: none;
@@ -161,7 +161,7 @@ include 'config.php';
 
 		.button-iyahapus{
 			padding: 10px 20px;
-			background-color: #E05B36; 
+			background-color: #DE0D4F; 
 			border-radius: 30px;
 			position: relative;
 			display: inline-block;
@@ -175,15 +175,15 @@ include 'config.php';
 		}
 		.button-iyahapus:hover{
 			background-color: #FFFFFF;
-			color: #E05B36;
+			color: #DE0D4F;
 			text-align: center;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}
 		.button-ok{
 			padding: 10px 20px;
-			background-color: #E05B36; 
+			background-color: #DE0D4F; 
 			border-radius: 30px;
 			position: relative;
 			display: inline-block;
@@ -344,7 +344,7 @@ include 'config.php';
 								?>
 
 								<!-- nomor halaman -->
-							<p style="font-size: 20px; font-family: montserrat medium; display: inline-block; padding: 0; margin: 0; position: relative; bottom: 26px;">Page</p> <p style="color: #E05B36; font-size: 20px; display: inline-block; padding: 0; margin: 0; font-family: montserrat medium; position: relative; bottom: 26px;"><?php echo $page; ?></p> <p style="font-size: 20px; font-family: montserrat medium; display:inline-block; padding: 0; margin: 0; position: relative; bottom: 26px;"> of <?php echo $total_pages; ?></p>
+							<p style="font-size: 20px; font-family: montserrat medium; display: inline-block; padding: 0; margin: 0; position: relative; bottom: 26px;">Page</p> <p style="color: #DE0D4F; font-size: 20px; display: inline-block; padding: 0; margin: 0; font-family: montserrat medium; position: relative; bottom: 26px;"><?php echo $page; ?></p> <p style="font-size: 20px; font-family: montserrat medium; display:inline-block; padding: 0; margin: 0; position: relative; bottom: 26px;"> of <?php echo $total_pages; ?></p>
 							<?php
 								// ke halaman selanjutnya
 								if($page < $total_pages){

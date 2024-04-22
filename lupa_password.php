@@ -225,7 +225,7 @@
 
 		.button-kembali{
 			padding: 10px 20px;
-			background-color: #E05B36; 
+			background-color: #DE0D4F; 
 			border-radius: 30px;
 			border: none;
 			position: relative;
@@ -238,9 +238,9 @@
 		}
 		.button-kembali:hover{
 			background-color: #FFFFFF;
-			color: #E05B36;
+			color: #DE0D4F;
 			text-align: center;
-			outline: 3px solid #E05B36;
+			outline: 3px solid #DE0D4F;
 			outline-offset: -3px;
 			cursor: pointer;
 		}
