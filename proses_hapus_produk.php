@@ -29,6 +29,6 @@ if(!$hasil_query) {
     " - ".mysqli_error($conn));
 } else {
   // echo "<script>alert('Data berhasil dihapus.');window.location='produk_page.php';</script>";
-  header('Location: produk_page.php=');
+  header('Location: produk_page.php');
 }
 ?>

@@ -312,8 +312,8 @@ include 'config.php';
 							<!-- Form untuk memunculkan popup untuk penghapusan dan pengeditan-->
 							<form action="produk_page.php?id=<?php echo $row['id'];?>#tanya-batal" method="POST">
 								<td><a id="ubah" href="form_edit_produk.php?id=<?php echo $row['id'];?>&page=<?php echo $page;?>">Ubah</a></td>
-								<td><input type="hidden" value="hapus"><a id="hapus" href="proses_hapus_produk.php?id=<?php echo $row['id'];?>&page=<?php echo $page;?>#tanya-batal">Hapus</a></td>
-							</form>
+								<td><input type="hidden" value="hapus"><a id="hapus" href="produk_page.php?id=<?php echo $row['id'];?>&page=<?php echo $page;?>#tanya-batal">Hapus</a></td>
+							</form> 
 						    </tr>
 						<!-- Tutup While -->
 						<?php
@@ -366,6 +366,7 @@ include 'config.php';
 						<a href='' class='link-batal' style="display: inline-block; margin: 0; padding: 0; position: relative; top: 50px;">Batal</a>
 						<!-- Menghapus produk dengan mengambil id dari input hapus -->
 						<a class="button-iyahapus" href="proses_hapus_produk.php?id=<?php echo $_GET['id'];?>&page=<?php echo $page;?>">Iya, Hapus</a>
+
 					</div>
 				</div>
 
