@@ -136,24 +136,6 @@
 			height: 61px;
 			z-index: 1;
 		}
-		#user-icon{
-			background-color: #DE0D4F;
-			border-radius: 46px;
-			padding: 8px 12px;
-			float: right;
-			position: relative;
-			top: 10px;
-			right: 60px;
-		}
-		#profile {
-			width: 25px;
-			height: 25px;
-			border-radius: 50%;
-			display: inline-block;
-			vertical-align: middle;
-			margin-right: 8px;
-			background-color: white;
-		}
 		#username{
 			display: inline-block;
 			padding: 0;
