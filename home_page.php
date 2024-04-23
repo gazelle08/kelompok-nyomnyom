@@ -127,8 +127,8 @@ session_start()
 				<!-- Wallet -->
 				<div class="col6" id="wallet">
 					<p id="saldo" style="font-family: montserrat medium; font-size: 20px; top: 29px; left: 23px; margin: 0; color:#6C6A6A;">Saldo</p>
-					<p id="saldo" style="font-family: montserrat semibold; font-size: 25px; top: 68px; left: 51px; margin: 0;">Rp. 32.500.000,00</p>
-					<p id="saldo" style="font-family: montserrat semibold; font-size: 20px; top: 108px; left: 93px; margin: 0; color: #18AD2D;">+ Rp. 1.500.000,00</p>
+					<p id="saldo" style="font-family: montserrat semibold; font-size: 25px; top: 68px; left: 51px; margin: 0;">Rp. 540.000,00</p>
+					<p id="saldo" style="font-family: montserrat semibold; font-size: 20px; top: 108px; left: 93px; margin: 0; color: #18AD2D;">+ Rp. 230.000,00</p>
 				</div>
 				<!-- Image -->
 				<div class="col6"><img src="wallet-image.svg" style="position: relative; left: 40px;"></div>
