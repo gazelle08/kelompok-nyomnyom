@@ -53,8 +53,8 @@ session_start()
 
 		/*CSS for ads*/
 		#ad-icon{
-			width: 390px;
-			height: 330px;
+			width: 850px;
+			height: 345px;
 			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
 			border-radius: 30px;
 			background-color: white;
@@ -69,7 +69,7 @@ session_start()
 			padding: 10px 20px;
 			border-radius: 30px;
 			position: relative;
-			top: 20px;
+			top: 30px;
 			border: none;
 		}
 		#button:hover {
@@ -189,7 +189,7 @@ session_start()
 				<!-- Ad icons -->
 				<div class="col3" id="ad-icon" style="left: 30px;">
 					<img src="tambah produk.png" style="position: relative; top: 16.8px;">
-					<button id="button" style="top: 27px;" onclick="location.href='form_tambah_produk.php';">Tambah Produk</button>
+					<button id="button" style="top: -50px;" onclick="location.href='form_tambah_produk.php';">Tambah Produk</button>
 				</div>
 			</div>
 		</div>
