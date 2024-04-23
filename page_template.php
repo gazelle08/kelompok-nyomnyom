@@ -95,11 +95,11 @@
 		  	color: white;
 		}
 		.sidebar img {
-    width: 100px; /* Sesuaikan lebar yang diinginkan */
-    height: 100px; /* Sesuaikan tinggi yang diinginkan */
+    width: 80px; /* Sesuaikan lebar yang diinginkan */
+    height: 80px; /* Sesuaikan tinggi yang diinginkan */
     position: absolute; /* Menentukan posisi absolut */
-    top: 0; /* Jarak dari atas */
-    left: 0; /* Jarak dari kiri */
+    top: 20px; /* Jarak dari atas */
+    left: 20px; /* Jarak dari kiri */
 }
 .sidebar a {
 			font-family: montserrat medium;
@@ -177,7 +177,7 @@
 </head>
 <body style="padding: 0; margin: 0; overflow-x: hidden;">
 	<div class="sidebar">
-	<img src="logo.svg">
+	<img src="logo1.svg">
 		<p style="font-size: 39.06px; text-align: 20px; padding-left: 110px;"><b>StyleMe</b></p>
 
 		<a class="<?php if($this_page=='beranda'){
