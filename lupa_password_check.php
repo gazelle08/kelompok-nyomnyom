@@ -6,7 +6,7 @@ session_start();
 <?php
     if (isset($_POST['submit'])){
         $username = $_POST['username'];
-        $no_hp = $_POST['no_handphone'];
+        $no_hp = $_POST['no_hp'];
 
         $query="SELECT * FROM user WHERE username = '$username' AND no_hp = '$no_hp'";
         $result = mysqli_num_rows(mysqli_query($conn, $query));

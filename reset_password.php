@@ -261,7 +261,7 @@ include 'config.php';
 			<!-- styleme & Gambar -->
 			<div class="col5" style="position: relative; top: 100px; text-align: right;">
 				<p id="styleme">StyleMe</p>
-				<img src="login-pic.svg" style="position: relative; top: 51px;">
+				<img src="styleme.png" style="width: 62%; height: auto; position: relative; top: -20px;">
 			</div>
 
 			<!-- Tempat Form Lupa Password-->

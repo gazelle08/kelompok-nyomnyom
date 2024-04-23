@@ -226,18 +226,12 @@ include 'config.php';
 			top: 30%;
 		}
 		#berhasil img {
-    		width: 150px; /* Sesuaikan lebar yang diinginkan */
-    		height: 180px; /* Sesuaikan tinggi yang diinginkan */
-    		margin: 0 auto; /* Menengahkan gambar */
+    		width: 120px; /* Sesuaikan lebar yang diinginkan */
+    		height: 120px; /* Sesuaikan tinggi yang diinginkan */
+    		margin: 25px auto; /* Menengahkan gambar */
     		display: block; /* Membuat gambar menjadi elemen blok agar dapat diatur margin secara otomatis */
 		}
 		
-		#berhasil img {
-    		width: 150px; /* Sesuaikan lebar yang diinginkan */
-    		height: 180px; /* Sesuaikan tinggi yang diinginkan */
-    		margin: 0 auto; /* Menengahkan gambar */
-    		display: block; /* Membuat gambar menjadi elemen blok agar dapat diatur margin secara otomatis */
-		}
 		
 		.button-ok{
 			padding: 10px 20px;
