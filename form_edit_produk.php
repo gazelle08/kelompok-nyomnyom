@@ -211,7 +211,7 @@ include 'config.php';
 			outline: 0;
 			text-align: center;
 			width: 340px;
-			height: 188px;
+			height: 200px;
 			box-shadow: 0 3px 10px rgba(0, 0, 0, 1.6);
 			left: 50%;
 			top: 40%;
