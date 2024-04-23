@@ -89,7 +89,7 @@ session_start()
 	<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content">
     	<div id="logo">
-      	<img src="lainnya.svg" alt="Logo">
+      	<img src="lainnya1.svg" alt="Logo">
     	</div>
 			<!-- Halo User! -->
 			<div class="row">
