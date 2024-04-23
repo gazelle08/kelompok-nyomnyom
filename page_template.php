@@ -94,7 +94,14 @@
 		  	overflow: hidden;
 		  	color: white;
 		}
-		.sidebar a {
+		.sidebar img {
+    width: 100px; /* Sesuaikan lebar yang diinginkan */
+    height: 100px; /* Sesuaikan tinggi yang diinginkan */
+    position: absolute; /* Menentukan posisi absolut */
+    top: 0; /* Jarak dari atas */
+    left: 0; /* Jarak dari kiri */
+}
+.sidebar a {
 			font-family: montserrat medium;
 			font-size: 20px;
 			display: block;
@@ -102,6 +109,7 @@
 			padding: 8px 0 8px 20px;
 			text-decoration: none;
 		}
+
 		.sidebar a.active {
 			background-color:white;
 			color: #DE0D4F;
@@ -169,8 +177,9 @@
 </head>
 <body style="padding: 0; margin: 0; overflow-x: hidden;">
 	<div class="sidebar">
-		<p style="font-size: 39.06px; text-align: left; padding-left: 20px;"><b>StyleMe</b></p>
-		<hr style="width: 57px; border: 3px solid white; background-color: white; margin : -30px 0 72px 24px; border-radius: 5px;">
+	<img src="logo.svg">
+		<p style="font-size: 39.06px; text-align: 20px; padding-left: 110px;"><b>StyleMe</b></p>
+
 		<a class="<?php if($this_page=='beranda'){
                      echo 'active';}?>" href="home_page.php">Beranda</a>
 		<a class="<?php 
