@@ -88,7 +88,6 @@ session_start()
 
 	<!--Sambungan dari div class:"content" dari page_template dan tutupnya juga disini-->
 		<div class="col12" id="page-content">
-    	</div>
 			<!-- Halo User! -->
 			<div class="row">
 				<div id="halo-user">
