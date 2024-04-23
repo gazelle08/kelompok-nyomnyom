@@ -96,9 +96,9 @@
 		}
 		.sidebar img {
     width: 100px; /* Sesuaikan lebar yang diinginkan */
-    height: 80px; /* Sesuaikan tinggi yang diinginkan */
+    height: 100px; /* Sesuaikan tinggi yang diinginkan */
     position: absolute; /* Menentukan posisi absolut */
-    top: 20px; /* Jarak dari atas */
+    top: 0; /* Jarak dari atas */
     left: 0; /* Jarak dari kiri */
 }
 .sidebar a {
@@ -161,16 +161,6 @@
 			float: right;
 		}
 
-		#logo img{
-  		float: left;
-  		margin-right: 20px;
-		}
-
-		.logo img {
-  		width: 50px;
-  		height: 50px;
-		}
-
 		/*CSS for content page
 		Ingat pakai ini untuk warna background halaman dan padding kiri 32px untuk kemudahan layout
 		Ingat juga dipakai setelah header seperti di home page
@@ -187,7 +177,7 @@
 </head>
 <body style="padding: 0; margin: 0; overflow-x: hidden;">
 	<div class="sidebar">
-	<img src="logo1.svg">
+	<img src="logo.svg">
 		<p style="font-size: 39.06px; text-align: 20px; padding-left: 110px;"><b>StyleMe</b></p>
 
 		<a class="<?php if($this_page=='beranda'){
@@ -221,17 +211,14 @@
 	</div>
 
 	<div class="content">
-  <div class="col12" id="header">
-    <div class="logo">
-      <img src="lainnya1.svg" alt="Logo">
-    </div>
-    <a href="logout.php" id="logout"><img src="logout.svg"></a>
-    <div id="user-icon">
-      <div id="profile"></div>
-      <p id="username"></p>
-    </div>
-  </div>
-</div>
+        <!-- Header -->
+        <div class="col12" id="header">
+            <a href="logout.php" id="logout"><img src="logout.svg"></a>
+            <div id="user-icon">
+                <div id="profile"> </div>
+                <p id="username"></p>
+            </div>
+        </div> 
 
 		<!-- Nanti jangan lupa ditutup div nya di page yang menggunakan div class:"content" -->
 		<!-- Jangan lupa juga untuk pakai div class: "page-content" di halaman selain tentang styleme untuk warna background serta padding kiri 32px untuk kemudahan layout. -->
