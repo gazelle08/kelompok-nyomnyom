@@ -188,7 +188,7 @@ session_start()
 				</div>
 				<!-- Ad icons -->
 				<div class="col3" id="ad-icon" style="left: 30px;">
-					<img src="tambah produk.svg" style="position: relative; top: 16.8px;">
+					<img src="tambah produk.png" style="position: relative; top: 16.8px;">
 					<button id="button" style="top: 27px;" onclick="location.href='form_tambah_produk.php';">Tambah Produk</button>
 				</div>
 			</div>
