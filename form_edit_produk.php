@@ -228,7 +228,7 @@ include 'config.php';
 		#berhasil img {
     		width: 120px; /* Sesuaikan lebar yang diinginkan */
     		height: 120px; /* Sesuaikan tinggi yang diinginkan */
-    		margin: 25px auto; /* Menengahkan gambar */
+    		margin: 35px auto; /* Menengahkan gambar */
     		display: block; /* Membuat gambar menjadi elemen blok agar dapat diatur margin secara otomatis */
 		}
 		
@@ -242,7 +242,7 @@ include 'config.php';
 			display: inline-block;
 			font-size: 20px;
 			font-family: montserrat semibold;
-			top: 40px;
+			top: 15px;
 			color: white;
 			transition: 0.3s;
 		}
@@ -276,7 +276,7 @@ include 'config.php';
 			<div class="col12" style="position: absolute; top: 0; text-align: left;">
 				<!-- Form -->
 				<div id="form">
-					<p style="position: relative; top: 0; left: 5px; margin: 0; padding: 0; font-family: montserrat medium; font-size: 20px;">Mohon masukkan data untuk produk yang ingin diubah</p>
+					<p style="position: relative; top: 0; left: 5px; margin: 0; padding: 0; font-family: montserrat medium; font-size: 20px;">Masukan perubahan pada data produk</p>
 					<hr style='width: 867px; position: absolute; border-radius: 5px; height: 2px; top: 65px; left: 25px; background-color: black; padding: 0; margin: 0; border: none;'>
 
 					<!-- Form Ubah -->
@@ -347,7 +347,7 @@ include 'config.php';
 				<div id="konfirmasi" class="konfirmasi">
 					<div class="konfirmasi-edit" id="berhasil">
 						<img src="confirmpic1.svg">
-						<p style="text-align: center; position: relative; top: 15.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Produk anda sudah diubah!</p>
+						<p style="text-align: center; position: relative; top: -1.7px; font-size: 20px; font-family: montserrat semibold; margin: 0; padding: 0;">Data produk sudah diubah!</p>
 						<button class="button-ok" onclick="location.href='produk_page.php?page=<?php echo $page;?>'">OK</button>
 					</div>
 				</div>
