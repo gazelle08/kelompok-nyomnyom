@@ -76,8 +76,25 @@ include 'config.php';
 			transition: 0.3s;
 			cursor: pointer;
 		}
-		#ubah:hover{
-			text-decoration: underline;
+		#button-ubah:hover{
+			background-color: white;
+			border: green;
+			color: green;
+			outline: 3px solid green;
+			transition: 0.3s;
+		}
+		#button-ubah{
+			background-color: green;
+			color: white;
+			font-family: montserrat semibold;
+			text-decoration: none;
+			font-size: 15px;
+			padding: 5px 10px;
+			border-radius: 30px;
+			position: relative;
+			top: 0;
+			border: none;
+			transition: 0.3s;
 		}
 		
 		#hapus{
@@ -88,10 +105,26 @@ include 'config.php';
 			transition: 0.3s;
 			cursor: pointer;
 		}
-		#hapus:hover{
-			text-decoration: underline;
+		#button-hapus:hover{
+			background-color: white;
+			border: red;
+			color: red;
+			outline: 3px solid red;
+			transition: 0.3s;
 		}
-		
+		#button-hapus{
+			background-color: red;
+			color: white;
+			font-family: montserrat semibold;
+			text-decoration: none;
+			font-size: 15px;
+			padding: 5px 10px;
+			border-radius: 30px;
+			position: relative;
+			top: 0;
+			border: none;
+			transition: 0.3s;
+		}
 		#button-tambah{
 			background-color: #DE0D4F;
 			color: white;
@@ -318,8 +351,8 @@ include 'config.php';
 						    <td><?php echo $row['deskripsi']; ?></td>
 							<!-- Form untuk memunculkan popup untuk penghapusan dan pengeditan-->
 							<form action="produk_page.php?id=<?php echo $row['id'];?>#tanya-batal" method="POST">
-								<td><a id="ubah" href="form_edit_produk.php?id=<?php echo $row['id'];?>&page=<?php echo $page;?>">Ubah</a></td>
-								<td><input type="hidden" value="hapus"><a id="hapus" href="produk_page.php?id=<?php echo $row['id'];?>&page=<?php echo $page;?>#tanya-batal">Hapus</a></td>
+								<td><a id="button-ubah" href="form_edit_produk.php?id=<?php echo $row['id'];?>&page=<?php echo $page;?>">Ubah</a></td>
+								<td><input type="hidden" value="hapus"><a id="button-hapus" href="produk_page.php?id=<?php echo $row['id'];?>&page=<?php echo $page;?>#tanya-batal">Hapus</a></td>
 							</form> 
 						    </tr>
 						<!-- Tutup While -->
