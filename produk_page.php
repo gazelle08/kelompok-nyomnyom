@@ -80,7 +80,7 @@ include 'config.php';
 			background-color: white;
 			border: #16FF00;
 			color: #16FF00;
-			outline: 3px #16FF00;
+			outline: 3px solid green;
 			transition: 0.3s;
 		}
 		#button-ubah{
