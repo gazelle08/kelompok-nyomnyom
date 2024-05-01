@@ -78,13 +78,13 @@ include 'config.php';
 		}
 		#button-ubah:hover{
 			background-color: white;
-			border: green;
-			color: green;
+			border: #16FF00;
+			color: #16FF00;
 			outline: 3px solid green;
 			transition: 0.3s;
 		}
 		#button-ubah{
-			background-color: green;
+			background-color: #16FF00;
 			color: white;
 			font-family: montserrat semibold;
 			text-decoration: none;
