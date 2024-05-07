@@ -174,8 +174,8 @@ session_start();
 			top: 30%;
 		}	
 		#berhasil img {
-    		width: 120px; /* Sesuaikan lebar yang diinginkan */
-    		height: 120px; /* Sesuaikan tinggi yang diinginkan */
+    		width: 150px; /* Sesuaikan lebar yang diinginkan */
+    		height: 150px; /* Sesuaikan tinggi yang diinginkan */
     		left: 30%; /* Menengahkan gambar */
     		display: block; /* Membuat gambar menjadi elemen blok agar dapat diatur margin secara otomatis */
 		}
